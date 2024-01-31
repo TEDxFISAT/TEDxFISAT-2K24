@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 } */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.top-layer,.bottom-layer{
+  width: 100vw;
+  height: 100vh;
+}
+
+.bottom-layer div{
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.top-layer{
+  z-index:-1;
+  background-color: palegreen;
+  top:0;
+  position:sticky;
+  overflow: hidden;
+  /* opacity: 50%; */
+}
+
+.bottom-layer{
+  z-index: 2;
+  /* background-color: bisque; */
+  overflow: scroll;
+  text-align: center;
+}
