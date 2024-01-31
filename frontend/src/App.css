@@ -63,6 +63,7 @@ body{
   top:0;
   position:sticky;
   overflow: hidden;
+  border: 1px solid salmon;
   /* opacity: 50%; */
 }
 
@@ -71,4 +72,11 @@ body{
   /* background-color: bisque; */
   overflow: scroll;
   text-align: center;
+}
+
+.top-layer img{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
 }
