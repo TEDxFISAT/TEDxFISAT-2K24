@@ -78,5 +78,21 @@ body{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 5;
 }
+
+.disapperaingContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.disapperaingContainer div{
+  width: 16.7vw;
+  height: 100vh;
+  background-color: red;
+  border: 1px solid white;
+}
+

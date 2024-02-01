@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
-// import DC from './DisappearingContainers'
+import DC from './DisappearingContainers'
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
@@ -24,7 +24,7 @@ const LandingPg = () => {
 
     return(
         <>
-      {/* <DC/> */}
+      <DC/>
       <div className='top-layer'>
         <h1>Page 1</h1>
         <img src="https://wallpaperset.com/w/full/2/8/0/521071.jpg" style={{clipPath:"circle(10% at 50% 50%)"}}></img>
