@@ -5,3 +5,5 @@ const RegistrationMain = () => {
     </>
     )
 }
+
+export default RegistrationMain

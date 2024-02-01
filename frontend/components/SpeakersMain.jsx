@@ -5,3 +5,5 @@ const SpeakerMain = () => {
     </>
     )
 }
+
+export default SpeakerMain
