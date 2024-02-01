@@ -59,11 +59,10 @@ body{
 
 .top-layer{
   z-index:-1;
-  background-color: palegreen;
+  background-color: black;
   top:0;
   position:sticky;
   overflow: hidden;
-  border: 1px solid salmon;
   /* opacity: 50%; */
 }
 
@@ -80,7 +79,7 @@ body{
   height: 100vh;
 }
 
-.disapperaingContainer{
+#disapperaingContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,10 +88,10 @@ body{
   position: fixed;
 }
 
-.disapperaingContainer div{
+#disapperaingContainer div{
   width: 16.7vw;
   height: 100vh;
   background-color: red;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
