@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 const DC = () => {
 
   let redboxes = []
-  for(let i=0;i<6;i++){
+  for(let i=0;i<15;i++){
     redboxes.push(<div className={i%2?"odd":"even"}></div>)
   }
 
@@ -28,7 +28,7 @@ const DC = () => {
       y:0
     },{
       y:'100vh',
-      delay:1,
+      delay:0.5,
       duration:1.5,
       stagger:0.2,
       scrollTrigger:{
