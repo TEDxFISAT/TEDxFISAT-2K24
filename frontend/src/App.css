@@ -59,7 +59,7 @@ body{
 
 .top-layer{
   z-index:-1;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   background-color: rgba(0, 0, 0, 0.2);
   top:0;
   position:sticky;

@@ -1,10 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect,useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
+
+    const cursorblobRef = useRef(null)
+
     useEffect(() => {
         gsap.fromTo("img",{
           opacity:0,
@@ -22,8 +25,30 @@ const LandingPg = () => {
         })
       },[])
 
+      useEffect(() => {
+        const cursorBlob = cursorblobRef.current;
+    
+        const handleMouseMove = (e) => {
+          const x = e.clientX - cursorBlob.clientWidth / 2;
+          const y = e.clientY - cursorBlob.clientHeight / 2;
+    
+          gsap.to(cursorBlob, {
+            duration: 1,
+            left: x,
+            top: y,
+          });
+        };
+    
+        document.addEventListener('mousemove', handleMouseMove);
+    
+        return () => {
+          document.removeEventListener('mousemove', handleMouseMove);
+        };
+      }, []);
+
     return(
         <>
+      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
       <DC/>
       <div className='top-layer'>
         <h1>Page 1</h1>
