@@ -1,0 +1,7 @@
+const RegistrationMain = () => {
+    return(
+    <>
+         Register
+    </>
+    )
+}

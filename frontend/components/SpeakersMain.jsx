@@ -1,0 +1,7 @@
+const SpeakerMain = () => {
+    return(
+    <>
+        Speakers
+    </>
+    )
+}
