@@ -46,12 +46,24 @@ const LandingPg = () => {
         };
       }, []);
 
+
+      //X popping up and then the whole thing pops up from left n moves to the right
+
     return(
         <>
-      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
+      {/* <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div> */}
       <DC/>
       <div className='top-layer'>
-        <h1>Page 1</h1>
+        {/* <h1>Page 1</h1> */}
+        <div className='titleWrapper'>
+          <div className='titleContainer1'></div>
+          <div className='titleContainer2'> 
+            <div>T</div>
+            <div>E</div>
+            <div>D</div>
+            <div>X</div>
+          </div>
+        </div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiidDROP39u0-MHsf6su9EdIVM1bEyu0IC3g&usqp=CAU" style={{clipPath:"circle(10% at 50% 50%)"}}></img>
       </div>
       <div className='bottom-layer'>
