@@ -1,0 +1,15 @@
+.titleWrapper{
+    border: 1px solid white;
+    width:50vw;
+    height: 40vh;
+    font-size: 15rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.titleWrapper div{
+    min-height: 100%;
+    width: 100%;
+    border: 1px solid salmon;
+    overflow: hidden;
+}

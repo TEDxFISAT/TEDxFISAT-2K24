@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
 gsap.registerPlugin(ScrollTrigger)
+import '../styles/landingpg.css'
 
 const LandingPg = () => {
 
@@ -51,7 +52,7 @@ const LandingPg = () => {
 
     return(
         <>
-      {/* <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div> */}
+      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
       <DC/>
       <div className='top-layer'>
         {/* <h1>Page 1</h1> */}
