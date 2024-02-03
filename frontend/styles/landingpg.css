@@ -1,16 +1,17 @@
 .titleWrapper{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     width:50vw;
     height: 40vh;
     font-size: 15rem;
     display:flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .titleWrapper div{
     min-height: 100%;
     width: 100%;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
     overflow: hidden;
     text-shadow: 0 0 15px rgba(0, 0, 0,0.4);
 }
@@ -18,13 +19,11 @@
 .titleContainer2{
     height:0vh;
     display: flex;
-    transform: translate(-75%,-100%);
-
+    /* transform: translate(-75%,-100%); */
 }
 
 .titleContainer3{
-    /* background-color: #000; */
-    transform: translateY(-210%);
+    background-color: rgb(29, 29, 29);
 }
 
 #X{

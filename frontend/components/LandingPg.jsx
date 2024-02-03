@@ -24,6 +24,25 @@ const LandingPg = () => {
             // markers:true,
             toggleActions:"restart none none none"}
         })
+
+        const tlLP = gsap.timeline();
+
+        tlLP.fromTo('.titleContainer3',{
+          y:"-205%"
+        },{
+          y:'-300%',
+          delay:2.2,
+          duration:0.7
+        })
+
+        tlLP.fromTo('.titleContainer2',{
+          y:"-100%",
+          x:'-75%',
+        },{
+          x:0,
+          delay:0.5,
+          duration:1
+        })
       },[])
 
       useEffect(() => {
