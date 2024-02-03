@@ -62,8 +62,9 @@ const LandingPg = () => {
             <div>T</div>
             <div>E</div>
             <div>D</div>
-            <div>X</div>
+            <div id="X">X</div>
           </div>
+          <div className='titleContainer3'></div>
         </div>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiidDROP39u0-MHsf6su9EdIVM1bEyu0IC3g&usqp=CAU" style={{clipPath:"circle(10% at 50% 50%)"}}></img>
       </div>
