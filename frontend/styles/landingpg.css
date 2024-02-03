@@ -8,12 +8,13 @@
     overflow: hidden;
 }
 
-.titleWrapper div{
+.titleWrapper div,.TED{
     min-height: 100%;
     width: 100%;
     /* border: 1px solid salmon; */
     overflow: hidden;
     text-shadow: 0 0 15px rgba(0, 0, 0,0.4);
+    font-weight: 600;
 }
 
 .titleContainer2{

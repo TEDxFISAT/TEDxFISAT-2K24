@@ -35,13 +35,35 @@ const LandingPg = () => {
           duration:0.7
         })
 
+        tlLP.fromTo('#X',{
+          backgroundColor:"red",
+          color:"black"
+        },{
+          backgroundColor:"rgba(255, 0, 0,0)",
+          color:"red",
+          duration:0.7
+        })
+
         tlLP.fromTo('.titleContainer2',{
           y:"-100%",
           x:'-75%',
         },{
           x:0,
-          delay:0.5,
           duration:1
+        })
+
+        gsap.fromTo('.TED',{
+          opacity:0,
+          scale:0
+        },{
+          scale:1,
+          delay:3.8,
+          duration:1,
+          opacity:1,
+          stagger:{
+            amount:0.3,
+            from:'end'
+          },
         })
       },[])
 
@@ -78,9 +100,9 @@ const LandingPg = () => {
         <div className='titleWrapper'>
           <div className='titleContainer1'></div>
           <div className='titleContainer2'> 
-            <div>T</div>
-            <div>E</div>
-            <div>D</div>
+            <div className='TED'>T</div>
+            <div className='TED'>E</div>
+            <div className='TED'>D</div>
             <div id="X">X</div>
           </div>
           <div className='titleContainer3'></div>
