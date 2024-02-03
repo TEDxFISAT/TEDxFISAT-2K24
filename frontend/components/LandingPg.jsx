@@ -28,7 +28,7 @@ const LandingPg = () => {
         const tlLP = gsap.timeline();
 
         tlLP.fromTo('.titleContainer3',{
-          y:"-205%"
+          y:"-200%"
         },{
           y:'-300%',
           delay:2.2,
