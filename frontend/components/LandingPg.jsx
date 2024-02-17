@@ -32,7 +32,7 @@ const LandingPg = () => {
         },{
           y:'-300%',
           delay:2.2,
-          duration:0.7
+          duration:1
         })
 
         tlLP.fromTo('#X',{
@@ -41,7 +41,7 @@ const LandingPg = () => {
         },{
           backgroundColor:"rgba(255, 0, 0,0)",
           color:"red",
-          duration:0.7
+          duration:0.2
         })
 
         tlLP.fromTo('.titleContainer2',{
@@ -57,8 +57,8 @@ const LandingPg = () => {
           scale:0
         },{
           scale:1,
-          delay:3.8,
-          duration:1,
+          delay:3.6,
+          duration:0.7,
           opacity:1,
           stagger:{
             amount:0.3,
@@ -93,7 +93,7 @@ const LandingPg = () => {
 
     return(
         <>
-      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(207, 49, 6, 1)",width:"150px",height:"150px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
+      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px white",width:"100px",height:"100px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
       <DC/>
       <div className='top-layer'>
         {/* <h1>Page 1</h1> */}
