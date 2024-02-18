@@ -10,14 +10,14 @@ const LandingPg = () => {
     const cursorblobRef = useRef(null)
 
     useEffect(() => {
-        gsap.fromTo("img",{
+        gsap.fromTo("#zoom",{
           opacity:0,
           scale:0
         },{
           opacity:1,
           scale:9,
           scrollTrigger:{
-            trigger:"img",
+            trigger:"#zoom",
             start:"80% 50%",
             end:"bottom 10%",
             scrub:true,
@@ -75,7 +75,7 @@ const LandingPg = () => {
           const y = e.clientY - cursorBlob.clientHeight / 2;
     
           gsap.to(cursorBlob, {
-            duration: 1,
+            duration: 0.8,
             left: x,
             top: y,
           });
@@ -93,7 +93,7 @@ const LandingPg = () => {
 
     return(
         <>
-      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px white",width:"100px",height:"100px",zIndex:-1,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
+      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px black",width:"100px",height:"100px",zIndex:5,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
       <DC/>
       <div className='top-layer'>
         {/* <h1>Page 1</h1> */}
@@ -107,7 +107,7 @@ const LandingPg = () => {
           </div>
           <div className='titleContainer3'></div>
         </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiidDROP39u0-MHsf6su9EdIVM1bEyu0IC3g&usqp=CAU" style={{clipPath:"circle(10% at 50% 50%)"}}></img>
+        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"black"}}></div>
       </div>
       <div className='bottom-layer'>
         <h1 style={{marginTop:"35vh"}}>Page 2</h1>
