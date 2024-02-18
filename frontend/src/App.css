@@ -71,6 +71,7 @@ body{
 }
 
 .bottom-layer{
+  margin-top: 100vh;
   z-index: 2;
   /* background-color: bisque; */
   overflow: scroll;

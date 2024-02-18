@@ -19,7 +19,7 @@ const LandingPg = () => {
           scrollTrigger:{
             trigger:"#zoom",
             start:"80% 50%",
-            end:"bottom 10%",
+            end:"bottom -100%",
             scrub:true,
             // markers:true,
             toggleActions:"restart none none none"}
