@@ -1,4 +1,4 @@
-import img from "./assets/ananthuSexyFace.jpg"
+import img from "./assets/sponsorMock.jpg"
 
 const SponsorData = [
     {

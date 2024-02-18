@@ -1,0 +1,37 @@
+.cardWrapper{
+    width: 100vw;
+    height:60vh;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.card{
+    background-color: #1e1e1e;
+    position: relative;
+    width: 30%;
+    height:100%;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imgDiv{
+    position: absolute;
+}
+
+.glassDiv{
+    opacity: 0;
+    width: 100%;
+    height:100%;
+    z-index: 2;
+    position: absolute;
+    /* border: 1px solid white; */
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.glassDiv:hover{
+    opacity: 1;
+}
