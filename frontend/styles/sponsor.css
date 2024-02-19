@@ -28,10 +28,30 @@
     z-index: 2;
     position: absolute;
     /* border: 1px solid white; */
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(20px);
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.glassDiv img{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: all 1s;
 }
 
 .glassDiv:hover{
     opacity: 1;
 }
+
+.glassDiv:hover > img{
+    /* transform: translateX(200px); */
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255,0.3);
+  }
+  
