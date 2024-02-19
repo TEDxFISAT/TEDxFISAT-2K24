@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import SponsorData from "../data/data"
 import '../styles/sponsor.css'
+import { GoArrowRight } from "react-icons/go";
 
 const Sponsors = () => {
     console.log(SponsorData)
@@ -21,7 +22,10 @@ const Sponsors = () => {
                                 <p>{name}</p>
                             </div>
                             <div className="glassDiv">
-                                <img src={img} style={{height:"35vh",width:"100%",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}></img>
+                                <div>
+                                    <GoArrowRight style={{color:"black",width:"45%",height:"45%",marginTop:"25%"}}/>
+                                </div>
+                                {/* <img src={img} style={{height:"35vh",width:"100%",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}></img> */}
                             </div>
                         </div>
                     )
