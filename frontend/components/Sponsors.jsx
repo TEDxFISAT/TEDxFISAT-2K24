@@ -2,13 +2,28 @@ import { useEffect } from "react"
 import SponsorData from "../data/data"
 import '../styles/sponsor.css'
 import { GoArrowRight } from "react-icons/go";
+// import gsap from 'gsap'
+// import { ScrollTrigger } from 'gsap/all'
+// gsap.registerPlugin(ScrollTrigger)
 
 const Sponsors = () => {
     console.log(SponsorData)
 
-    useEffect(() => {
-
-    },[])
+    // useEffect(() => {
+    //     gsap.fromTo(".card",{
+    //         scale:0,
+    //         opacity:0
+    //     },{
+    //         scale:1,
+    //         opacity:1,
+    //         duration:1,
+    //         stagger:0.5,
+    //         scrollTrigger:{
+    //           trigger:".cardWrapper",
+    //           // markers:true,
+    //           toggleActions:"restart none none none"}
+    //       })
+    // },[])
 
     return(
         <>
@@ -23,7 +38,7 @@ const Sponsors = () => {
                             </div>
                             <div className="glassDiv">
                                 <div>
-                                    <GoArrowRight style={{color:"black",width:"45%",height:"45%",marginTop:"25%"}}/>
+                                    <GoArrowRight id="arrow" style={{color:"black",width:"45%",height:"45%",marginTop:"25%"}}/>
                                 </div>
                                 {/* <img src={img} style={{height:"35vh",width:"100%",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}></img> */}
                             </div>
