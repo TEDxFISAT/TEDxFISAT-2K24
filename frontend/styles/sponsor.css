@@ -75,5 +75,6 @@
 .card:hover {
     transform: scale(1.05) translateY(-3%);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: 3px solid black;
   }
   
