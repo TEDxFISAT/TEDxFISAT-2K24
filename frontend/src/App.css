@@ -50,12 +50,12 @@ body{
   height: 100vh;
 }
 
-.bottom-layer div{
+/* .bottom-layer div{
   text-align: center;
   width: 100vw;
   height: 100vh;
   border: 1px solid black;
-}
+} */
 
 .top-layer{
   display: flex;
@@ -76,6 +76,8 @@ body{
   /* background-color: bisque; */
   overflow: scroll;
   text-align: center;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 #zoom{

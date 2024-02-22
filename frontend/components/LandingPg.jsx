@@ -2,8 +2,9 @@ import { useEffect,useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
-gsap.registerPlugin(ScrollTrigger)
 import '../styles/landingpg.css'
+import SplitType from 'split-type'
+gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
 
@@ -90,6 +91,36 @@ const LandingPg = () => {
         };
       }, []);
 
+      useEffect(() => {
+        const splitTypes = document.querySelectorAll('.reveal-type');
+    
+        splitTypes.forEach((char, i) => {
+            const bg = char.dataset.bgColor;
+            const fg = char.dataset.fgColor;
+
+            const text = new SplitType(char,{types:'chars'})//new SplitType(char, { types: 'chars' });
+            gsap.fromTo(
+                text.chars,
+                {
+                    color: bg,
+                },
+                {
+                    color: fg,
+                    duration: 0.3,
+                    stagger: 0.01,
+                    scrollTrigger: {
+                        trigger: char,
+                        start: 'top 80%',
+                        end: 'top 20%',
+                        scrub: true,
+                        // markers: true,
+                        toggleActions: 'play play reverse reverse',
+                    },
+                }
+            );
+        });
+    }, []);
+
 
       //X popping up and then the whole thing pops up from left n moves to the right
 
@@ -112,10 +143,19 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        <h1>Page 2</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        {/* <h1>Page 2</h1> */}
+          <p className='reveal-type' data-bg-color="#606060" data-fg-color="white">
+            TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth 
+            spreading”, emerged in 2017, aiming to cultivate an inclusive and equitable community of 
+            thought leaders capable of positively impacting society. Organized by undergraduate student 
+            directors and staff advisors, TEDxFISAT offers events, connections, and ongoing information 
+            to elevate FISAT's vibrancy and prosperity. In 2018, TEDxFISAT hosted its inaugural in-person 
+            conference,BREATHTAKING DISARRAY, featuring over 10 speakers from diverse fields and 
+            four performances. We fervently believe in the transformative potential of ideas to alter 
+            perspectives, lives, and the world at large. Our community endeavors to curate a repository 
+            of knowledge from the region's brightest minds, fostering an environment where curious 
+            minds can engage with ideas and one another.
+          </p>
       </div>
       <div className='bottom-layer' style={{padding:0,margin:0}}>
         <h1>Page 3</h1>
