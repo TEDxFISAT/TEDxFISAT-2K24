@@ -92,7 +92,7 @@ const LandingPg = () => {
       }, []);
 
       useEffect(() => {
-        const splitTypes = document.querySelectorAll('.reveal-type');
+        const splitTypes = document.querySelectorAll('.reveal-text');
     
         splitTypes.forEach((char, i) => {
             const bg = char.dataset.bgColor;
@@ -121,6 +121,36 @@ const LandingPg = () => {
         });
     }, []);
 
+    useEffect(() => {
+      const splitTypes = document.querySelectorAll('.reveal-heading');
+  
+      splitTypes.forEach((char, i) => {
+
+          const text = new SplitType(char,{types:'chars'})//new SplitType(char, { types: 'chars' });
+          gsap.fromTo(
+              text.chars,
+              {
+                  opacity:0,
+                  y:100
+              },
+              {
+                  opacity:1,
+                  duration: 0.4,
+                  stagger: 0.08,
+                  y:0,
+                  scrollTrigger: {
+                      trigger: '.reveal-heading',
+                      // start: 'top 80%',
+                      // end: 'top 20%',
+                      // scrub: true,
+                      // markers: true,
+                      toggleActions: 'restart none none none',
+                  },
+              }
+          );
+      });
+  }, []);
+
 
       //X popping up and then the whole thing pops up from left n moves to the right
 
@@ -143,8 +173,8 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        {/* <h1>Page 2</h1> */}
-          <p className='reveal-type' data-bg-color="#606060" data-fg-color="white">
+        <h1 className='reveal-heading' style={{overflow:"hidden",color:"rgba(255, 0,0, 1)",fontWeight:"800",fontSize:"4.5rem"}}>PAGE 2</h1>
+          <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
             TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth 
             spreading”, emerged in 2017, aiming to cultivate an inclusive and equitable community of 
             thought leaders capable of positively impacting society. Organized by undergraduate student 
