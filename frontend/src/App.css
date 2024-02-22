@@ -71,6 +71,10 @@ body{
 }
 
 .bottom-layer{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
   margin-top: 100vh;
   z-index: 2;
   /* background-color: bisque; */

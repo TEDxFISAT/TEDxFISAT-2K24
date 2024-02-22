@@ -174,7 +174,7 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        <div className='section-wrapper'>
+        <div className='section-wrapper' style={{marginRight:"30vw"}}>
           <p className='reveal-heading'><span>OUR </span> THEME</p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
             The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
@@ -190,7 +190,7 @@ const LandingPg = () => {
           </p>
         </div>
         <br/><br/>
-        <div className='section-wrapper'>
+        <div className='section-wrapper' style={{marginLeft:"30vw"}}>
           <p className='reveal-heading'>TEDx<span style={{fontSize:"5rem"}}>FISAT</span></p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
             The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
