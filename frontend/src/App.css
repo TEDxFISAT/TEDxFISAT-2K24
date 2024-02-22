@@ -75,8 +75,8 @@ body{
   z-index: 2;
   /* background-color: bisque; */
   overflow: scroll;
-  text-align: center;
-  font-size: 30px;
+  /* text-align: center; */
+  font-size: 1.3rem;
   font-weight: 500;
 }
 

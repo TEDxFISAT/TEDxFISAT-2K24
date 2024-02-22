@@ -107,7 +107,7 @@ const LandingPg = () => {
                 {
                     color: fg,
                     duration: 0.3,
-                    stagger: 0.01,
+                    stagger: 1,
                     scrollTrigger: {
                         trigger: char,
                         start: 'top 80%',
@@ -135,9 +135,10 @@ const LandingPg = () => {
               },
               {
                   opacity:1,
-                  duration: 0.4,
+                  duration: 0.8,
                   stagger: 0.08,
                   y:0,
+                  ease:"back.out",
                   scrollTrigger: {
                       trigger: '.reveal-heading',
                       // start: 'top 80%',
@@ -173,19 +174,21 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        <h1 className='reveal-heading' style={{overflow:"hidden",color:"rgba(255, 0,0, 1)",fontWeight:"800",fontSize:"4.5rem"}}>PAGE 2</h1>
+        <div style={{width:"80vw",height:"100%"}}>
+        <p className='reveal-heading' style={{overflow:"hidden",color:"red",fontWeight:"700",fontSize:"5rem",margin:0}}><span style={{color:"white",fontWeight:"200",fontSize:"4.5rem"}}>OUR </span> THEME</p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
-            TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth 
-            spreading”, emerged in 2017, aiming to cultivate an inclusive and equitable community of 
-            thought leaders capable of positively impacting society. Organized by undergraduate student 
-            directors and staff advisors, TEDxFISAT offers events, connections, and ongoing information 
-            to elevate FISAT's vibrancy and prosperity. In 2018, TEDxFISAT hosted its inaugural in-person 
-            conference,BREATHTAKING DISARRAY, featuring over 10 speakers from diverse fields and 
-            four performances. We fervently believe in the transformative potential of ideas to alter 
-            perspectives, lives, and the world at large. Our community endeavors to curate a repository 
-            of knowledge from the region's brightest minds, fostering an environment where curious 
-            minds can engage with ideas and one another.
+          TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth 
+          spreading”, emerged in 2017, aiming to cultivate an inclusive and equitable community of 
+          thought leaders capable of positively impacting society. Organized by undergraduate student 
+          directors and staff advisors, TEDxFISAT offers events, connections, and ongoing information 
+          to elevate FISAT's vibrancy and prosperity. In 2018, TEDxFISAT hosted its inaugural in-person 
+          conference,BREATHTAKING DISARRAY, featuring over 10 speakers from diverse fields and 
+          four performances. We fervently believe in the transformative potential of ideas to alter 
+          perspectives, lives, and the world at large. Our community endeavors to curate a repository 
+          of knowledge from the region's brightest minds, fostering an environment where curious 
+          minds can engage with ideas and one another.
           </p>
+          </div>
       </div>
       <div className='bottom-layer' style={{padding:0,margin:0}}>
         <h1>Page 3</h1>
