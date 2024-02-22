@@ -174,28 +174,44 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        <div style={{width:"80vw",height:"100%"}}>
-        <p className='reveal-heading' style={{overflow:"hidden",color:"red",fontWeight:"700",fontSize:"5rem",margin:0}}><span style={{color:"white",fontWeight:"200",fontSize:"4.5rem"}}>OUR </span> THEME</p>
+        <div className='section-wrapper'>
+          <p className='reveal-heading'><span>OUR </span> THEME</p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
-          TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth 
-          spreading”, emerged in 2017, aiming to cultivate an inclusive and equitable community of 
-          thought leaders capable of positively impacting society. Organized by undergraduate student 
-          directors and staff advisors, TEDxFISAT offers events, connections, and ongoing information 
-          to elevate FISAT's vibrancy and prosperity. In 2018, TEDxFISAT hosted its inaugural in-person 
-          conference,BREATHTAKING DISARRAY, featuring over 10 speakers from diverse fields and 
-          four performances. We fervently believe in the transformative potential of ideas to alter 
-          perspectives, lives, and the world at large. Our community endeavors to curate a repository 
-          of knowledge from the region's brightest minds, fostering an environment where curious 
-          minds can engage with ideas and one another.
+            The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
+            Elementary”, which encapsulates the idea of reshaping fundamental elements. This 
+            overarching theme delves deeply into the transformative journey of reconstructing core 
+            components across various sectors or domains. It emphasizes the significant impact that 
+            changes at the foundational level can have on the broader framework and mindset of a 
+            system. These elementary changes are vital as they can either catalyse improvement or 
+            present challenges. The discussions at TEDxFISAT will explore innovative approaches, 
+            initiatives, and insights aimed at promoting positive change and evolution within 
+            fundamental structures. This discourse will foster conversations about strategies for 
+            sustainable progress and holistic development.
           </p>
-          </div>
+        </div>
+        <br/><br/>
+        <div className='section-wrapper'>
+          <p className='reveal-heading'>TEDx<span style={{fontSize:"5rem"}}>FISAT</span></p>
+          <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
+            The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
+            Elementary”, which encapsulates the idea of reshaping fundamental elements. This 
+            overarching theme delves deeply into the transformative journey of reconstructing core 
+            components across various sectors or domains. It emphasizes the significant impact that 
+            changes at the foundational level can have on the broader framework and mindset of a 
+            system. These elementary changes are vital as they can either catalyse improvement or 
+            present challenges. The discussions at TEDxFISAT will explore innovative approaches, 
+            initiatives, and insights aimed at promoting positive change and evolution within 
+            fundamental structures. This discourse will foster conversations about strategies for 
+            sustainable progress and holistic development.
+          </p>
+        </div>
       </div>
-      <div className='bottom-layer' style={{padding:0,margin:0}}>
+      {/* <div className='bottom-layer' style={{padding:0,margin:0}}>
         <h1>Page 3</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      </div> */}
     </>
     )
 }
