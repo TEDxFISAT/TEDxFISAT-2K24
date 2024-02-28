@@ -114,7 +114,7 @@ const LandingPg = () => {
                         end: 'top 20%',
                         scrub: true,
                         // markers: true,
-                        toggleActions: 'play play reverse reverse',
+                        toggleActions: 'reverse none none none',
                     },
                 }
             );
@@ -138,7 +138,7 @@ const LandingPg = () => {
                   duration: 0.8,
                   stagger: 0.08,
                   y:0,
-                  ease:"back.out",
+                  ease:"out",
                   scrollTrigger: {
                       trigger: '.reveal-heading',
                       // start: 'top 80%',

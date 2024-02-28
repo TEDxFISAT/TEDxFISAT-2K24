@@ -6,35 +6,49 @@ gsap.registerPlugin(ScrollTrigger)
 const DC = () => {
 
   let redboxes = []
-  for(let i=0;i<15;i++){
+  for(let i=0;i<6;i++){
     redboxes.push(<div className={i%2?"odd":"even"}></div>)
   }
 
   useEffect(() => {
-    
-    gsap.fromTo('.odd',{
+
+    gsap.fromTo('#disapperaingContainer div',{
       y:0
     },{
       y:'-100vh',
-      delay:1,
-      duration:1.2,
-      stagger:0.2,
-      scrollTrigger:{
-        trigger:"#disapperaingContainer",
-        toggleActions:"play none none none"}
-    })
-
-    gsap.fromTo('.even',{
-      y:0
-    },{
-      y:'100vh',
       delay:0.5,
       duration:1.5,
-      stagger:0.2,
+      stagger:0.3,
+      ease:"back.out",
       scrollTrigger:{
-        trigger:"#disapperaingContainer",
-        toggleActions:"play none none none"}
-    })
+          trigger:"#disapperaingContainer",
+          toggleActions:"play none none none"}
+    }
+    )
+    
+    // gsap.fromTo('.odd',{
+    //   y:0
+    // },{
+    //   y:'-100vh',
+    //   delay:1,
+    //   duration:1.2,
+    //   stagger:0.2,
+    //   scrollTrigger:{
+    //     trigger:"#disapperaingContainer",
+    //     toggleActions:"play none none none"}
+    // })
+
+    // gsap.fromTo('.even',{
+    //   y:0
+    // },{
+    //   y:'100vh',
+    //   delay:0.5,
+    //   duration:1.5,
+    //   stagger:0.2,
+    //   scrollTrigger:{
+    //     trigger:"#disapperaingContainer",
+    //     toggleActions:"play none none none"}
+    // })
   
   },[])
 
