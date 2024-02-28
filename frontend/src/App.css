@@ -79,14 +79,15 @@ body{
   margin-top: 100vh;
   z-index: 2;
   width: 90vw;
-  padding: 2%;
+  padding: 2vw;
   margin-left: 3vw;
   /* background-color: bisque; */
   /* overflow: scroll; */
   /* text-align: center; */
   font-size: 1.3rem;
   font-weight: 500;
-  border-radius: 50px;
+  border-radius: 2.5em;
+
 }
 
 #zoom{

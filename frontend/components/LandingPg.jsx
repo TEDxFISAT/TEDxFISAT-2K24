@@ -29,6 +29,27 @@ const LandingPg = () => {
             toggleActions:"restart none none none"}
         })
 
+        gsap.to(
+          '.bottom-layer',
+          {
+             padding:"5vw 0vw",
+             marginLeft:"0px",
+              width:"100vw",
+              duration: 0.3,
+              borderTopLeftRadius:0,
+              borderTopRightRadius:0,
+              
+              scrollTrigger: {
+                  trigger: '.bottom-layer',
+                  start: 'top 70%',
+                  end: 'top 10%',
+                  scrub: 1,
+                  // markers: true,
+                  toggleActions: 'reverse none none reverse',
+              },
+          }
+      );
+
         const tlLP = gsap.timeline();
 
         tlLP.fromTo('.titleContainer3',{
