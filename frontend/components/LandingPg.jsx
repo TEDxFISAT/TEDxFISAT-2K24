@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
 import '../styles/landingpg.css'
 import SplitType from 'split-type'
+import Library from "../data/assets/Library.jpg"
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
@@ -174,7 +175,8 @@ const LandingPg = () => {
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
       <div className='bottom-layer' style={{marginTop:"135vh"}}>
-        <div className='section-wrapper' style={{marginRight:"30vw"}}>
+        <div className='section-wrapper'>
+          <div style={{width:"70%"}}>
           <p className='reveal-heading'><span>OUR </span> THEME</p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
             The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
@@ -188,9 +190,19 @@ const LandingPg = () => {
             fundamental structures. This discourse will foster conversations about strategies for 
             sustainable progress and holistic development.
           </p>
+          </div>
+          <div className='About-img-wrapper'>
+            <div></div>
+            <img src={Library}></img>
+          </div>
         </div>
         <br/><br/>
-        <div className='section-wrapper' style={{marginLeft:"30vw"}}>
+        <div className='section-wrapper'>
+        <div className='About-img-wrapper'>
+            <div></div>
+            <img src={Library}></img>
+          </div>
+        <div style={{width:"70%"}}>
           <p className='reveal-heading'>TEDx<span style={{fontSize:"5rem"}}>FISAT</span></p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
             The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
@@ -204,6 +216,7 @@ const LandingPg = () => {
             fundamental structures. This discourse will foster conversations about strategies for 
             sustainable progress and holistic development.
           </p>
+          </div>
         </div>
       </div>
       {/* <div className='bottom-layer' style={{padding:0,margin:0}}>
