@@ -12,9 +12,8 @@ const LandingPg = () => {
 
     useEffect(() => {
         gsap.fromTo("#zoom",{
-          opacity:0.8,
+          // opacity:0.8,
           scale:0,
-          backgroundColor:"red"
         },{
           opacity:1,
           scale:9,
@@ -131,7 +130,7 @@ const LandingPg = () => {
           </div>
           <div className='titleContainer3'></div>
         </div>
-        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
+        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"rgba(255, 0,0, 1)"}}></div>
       </div>
       <About/>
       <div style={{padding:0,margin:0,height:"100vh",color:"black"}}>
