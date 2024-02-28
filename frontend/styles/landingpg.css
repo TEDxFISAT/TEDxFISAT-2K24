@@ -63,7 +63,25 @@
     background-color: #171717; */
 }
 
-.About-img-wrapper img{
+.About-img-wrapper{
+    position: relative;
+    height: 100%;
+    width: 20vw;
+    overflow: hidden;
+}
+
+.About-img-wrapper div{
+    position: absolute;
     width:20vw;
     height: 90%;
+    background-color: rgb(255, 41, 41);
+    z-index: 1;
+    /* border: 1px solid white; */
+}
+
+.About-img-wrapper img{
+    position: absolute;
+    width:20vw;
+    height: 90%;
+    border-radius: 10px;
 }

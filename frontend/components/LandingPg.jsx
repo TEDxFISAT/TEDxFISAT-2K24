@@ -69,6 +69,61 @@ const LandingPg = () => {
             from:'end'
           },
         })
+
+        let tlm1 = gsap.timeline(
+          { 
+            scrollTrigger: {
+              trigger: ".About-img-wrapper",
+              toggleActions: 'restart none none none'
+            }
+          }
+        )
+        
+        tlm1.fromTo(".About-img-wrapper div",
+          {
+            y:"-100%",
+            x:"-19vw"
+          },
+          {
+            y:0,
+            x:"-19vw",
+            delay:0.5,
+            duration:0.5,
+            // ease:"back.in"
+          }
+        )
+
+        tlm1.fromTo(".About-img-wrapper div",
+          {
+            x:"-19vw"
+          },
+          {
+            x:0,
+            duration:0.5,
+            // ease:"back.in"
+          }
+        )
+
+        tlm1.fromTo(".About-img-wrapper img",
+          {
+            x:"-20vw"
+          },
+          {
+            x:0,
+            duration:0.1,
+            // ease:"back.in"
+          }
+        )
+
+        tlm1.fromTo(".About-img-wrapper div",
+          {
+            x:0
+          },
+          {
+            x:"20vw",
+            duration:0.5
+          }
+        )
       },[])
 
       useEffect(() => {
