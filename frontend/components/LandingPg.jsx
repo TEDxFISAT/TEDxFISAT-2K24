@@ -19,7 +19,7 @@ const LandingPg = () => {
         },{
           opacity:1,
           scale:9,
-          backgroundColor:"black",
+          // backgroundColor:"black",
           scrollTrigger:{
             trigger:"#zoom",
             start:"80% 50%",
@@ -229,7 +229,7 @@ const LandingPg = () => {
         </div>
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)"}}></div>
       </div>
-      <div className='bottom-layer' style={{marginTop:"135vh"}}>
+      <div className='bottom-layer' >
         <div className='section-wrapper'>
           <div style={{width:"70%"}}>
           <p className='reveal-heading'><span>OUR </span> THEME</p>
