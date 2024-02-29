@@ -86,7 +86,8 @@ body{
   /* text-align: center; */
   font-size: 1.3rem;
   font-weight: 500;
-  border-radius: 2.5em;
+  border-radius: 1.6em;
+  box-shadow: 0 0 10px black;
 
 }
 

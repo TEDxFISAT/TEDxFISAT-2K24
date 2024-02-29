@@ -12,7 +12,7 @@ const LandingPg = () => {
 
     useEffect(() => {
         gsap.fromTo("#zoom",{
-          // opacity:0.8,
+          opacity:0.8,
           scale:0,
         },{
           opacity:1,
@@ -39,8 +39,8 @@ const LandingPg = () => {
               
               scrollTrigger: {
                   trigger: '.bottom-layer',
-                  start: 'top 70%',
-                  end: 'top 10%',
+                  start: 'top 60%',
+                  end: 'top 0%',
                   scrub: 1,
                   // markers: true,
                   toggleActions: 'reverse none none reverse',
@@ -116,7 +116,7 @@ const LandingPg = () => {
 
     return(
         <>
-      <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px black",width:"100px",height:"100px",zIndex:5,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div>
+      {/* <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px black",width:"100px",height:"100px",zIndex:5,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div> */}
       <DC/>
       <div className='top-layer'>
         {/* <h1>Page 1</h1> */}
