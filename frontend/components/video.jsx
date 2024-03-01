@@ -63,9 +63,9 @@ const Video = () => {
       gsap.to('.notHero',{
         opacity:0,
         scrollTrigger: {
-            trigger: '.nothero',
-            start: 'top 10%',
-            end:"top -10%",
+            trigger: '.notHero',
+            start: 'top -20%',
+            end:"top -100%",
             scrub:true,
             markers: true,
             toggleActions: 'reverse none none none',
