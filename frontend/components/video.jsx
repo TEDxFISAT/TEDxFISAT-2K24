@@ -1,3 +1,8 @@
+import { useEffect } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
+
 const Video = () => {
     useEffect(() => {
         let tlv1 = gsap.timeline()
@@ -13,7 +18,7 @@ const Video = () => {
               // duration: 0.3,
               scrollTrigger: {
                   trigger: '.hero',
-                  start: 'top 60%',
+                  start: 'top 80%',
                   end: 'top 40%',
                   scrub: true,
                   // markers: true,
@@ -54,13 +59,23 @@ const Video = () => {
           toggleActions: 'reverse none none none',
       }
       })
+
+      gsap.to('.notHero',{
+        opacity:0,
+        scrollTrigger: {
+            trigger: '.nothero',
+            start: 'top 10%',
+            end:"top -10%",
+            scrub:true,
+            markers: true,
+            toggleActions: 'reverse none none none',
+        }
+      })
       },[])
     return(
-        <div style={{height:"200vh", width:"100vw",backgroundColor:"black",display:"flex",justifyContent:"center",alignItems:"center",marginTop:"50vh"}}>
-        <div className="notHero" style={{height:"100vh", width:"100vw",backgroundColor:"green",display:"flex",justifyContent:"center",alignItems:"center",position:"sticky",top:"0vh"}}>
-          <div className="hero" style={{height:"10vh", width:"10vh",backgroundColor:"white",zIndex:2,transform:"rotate(-30deg)"}}></div>
+        <div className="notHero" style={{height:"100vh", width:"100vw",backgroundColor:"green",display:"flex",justifyContent:"center",alignItems:"center",position:"sticky",top:"0vh",marginTop:"50vh"}}>
+          <div className="hero" style={{height:"10vh", width:"10vh",backgroundColor:"white",transform:"rotate(-30deg)"}}></div>
         </div>
-      </div>
     )
 }
 

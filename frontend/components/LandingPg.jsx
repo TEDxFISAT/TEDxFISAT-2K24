@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
 import '../styles/landingpg.css'
 import About from './About'
+import Video from './video'
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
@@ -132,6 +133,7 @@ const LandingPg = () => {
         </div>
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"rgba(255, 0,0, 1)"}}></div>
       </div>
+      <Video/>
       <About/>
       <div style={{padding:0,margin:0,height:"100vh",color:"black"}}>
         <h1>Page 3</h1>
