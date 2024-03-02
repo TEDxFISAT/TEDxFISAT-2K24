@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import { FaPlay } from "react-icons/fa";
+import { FaPause } from "react-icons/fa6";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -41,6 +43,19 @@ const Video = () => {
               toggleActions: 'reverse none none none',
           }
       })
+
+      gsap.to("#playButton",{
+        opacity:0,
+        scale:0,
+        scrollTrigger: {
+            trigger: '.hero',
+            start: 'top 40%',
+            end: 'top 39%',
+            scrub: true,
+            // markers: true,
+            toggleActions: 'reverse none none none',
+        }
+      })
     
       gsap.fromTo('.notHero',{
         backgroundColor: "rgba(10, 255, 10, 0)",
@@ -65,7 +80,7 @@ const Video = () => {
         scrollTrigger: {
             trigger: '.bottom-layer',
             start: 'top 110%',
-            end:"top 100%",
+            end:"top 80%",
             scrub:true,
             markers: true,
             toggleActions: 'reverse none none none',
@@ -74,7 +89,10 @@ const Video = () => {
       },[])
     return(
         <div className="notHero" style={{height:"100vh", width:"100vw",backgroundColor:"green",display:"flex",justifyContent:"center",alignItems:"center",position:"sticky",top:"0vh",marginTop:"50vh"}}>
-          <div className="hero" style={{height:"10vh", width:"10vh",backgroundColor:"white",transform:"rotate(-30deg)"}}></div>
+          <div className="hero" style={{position:"relative",height:"10vh", width:"10vh",backgroundColor:"black",transform:"rotate(-30deg)", borderRadius:"2.5em",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <FaPlay id="playButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white",zIndex:2,backgroundColor:"black"}}/>
+            <FaPause id="pauseButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white"}}/>
+          </div>
         </div>
     )
 }
