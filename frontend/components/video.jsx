@@ -31,8 +31,8 @@ const Video = () => {
       tlv1.fromTo('.hero',{
         scale:3,
       },{
-            backgroundColor:"red",
             transform:"rotate(0deg)",
+            opacity:0,
             scale:2.5,
             scrollTrigger: {
               trigger: '.hero',
@@ -58,11 +58,11 @@ const Video = () => {
       })
     
       gsap.fromTo('.notHero',{
-        backgroundColor: "rgba(10, 255, 10, 0)",
+        backgroundColor: "rgba(90, 90, 90, 0)",
         scale:0.5,
         transform:"rotate(30deg)"
       },{
-        backgroundColor: "rgba(10, 255, 10, 1)",
+        backgroundColor: "rgba(90, 90, 90, 1)",
         scale:1,
         transform:"rotate(0deg)",
         scrollTrigger: {
