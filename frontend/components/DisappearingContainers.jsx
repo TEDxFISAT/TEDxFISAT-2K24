@@ -18,7 +18,7 @@ const DC = () => {
       y:'-100vh',
       delay:0.5,
       duration:1.5,
-      stagger:0.3,
+      stagger:0.25,
       ease:"back.out",
       scrollTrigger:{
           trigger:"#disapperaingContainer",

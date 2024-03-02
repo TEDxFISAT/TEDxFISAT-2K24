@@ -21,7 +21,7 @@ const Video = () => {
               scrollTrigger: {
                   trigger: '.hero',
                   start: 'top 80%',
-                  end: 'top 40%',
+                  end: 'top 50%',
                   scrub: true,
                   // markers: true,
                   toggleActions: 'reverse none none none',
@@ -36,7 +36,7 @@ const Video = () => {
             scale:2.5,
             scrollTrigger: {
               trigger: '.hero',
-              start: 'top 40%',
+              start: 'top 50%',
               end: 'top 10%',
               scrub: true,
               // markers: true,
@@ -49,7 +49,7 @@ const Video = () => {
         scale:0,
         scrollTrigger: {
             trigger: '.hero',
-            start: 'top 40%',
+            start: 'top 50%',
             end: 'top 39%',
             scrub: true,
             // markers: true,
@@ -67,7 +67,7 @@ const Video = () => {
         transform:"rotate(0deg)",
         scrollTrigger: {
           trigger: '.hero',
-          start: 'top 40%',
+          start: 'top 50%',
           end: 'top 10%',
           scrub: true,
           // markers: true,
@@ -82,7 +82,7 @@ const Video = () => {
             start: 'top 110%',
             end:"top 80%",
             scrub:true,
-            markers: true,
+            // markers: true,
             toggleActions: 'reverse none none none',
         }
       })
