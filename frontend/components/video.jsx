@@ -85,7 +85,7 @@ const Video = () => {
         scrollTrigger: {
           trigger: '.hero',
           start: 'top 50%',
-          end: 'top 10%',
+          end: 'top 5%',
           scrub: true,
           // markers: true,
           toggleActions: 'reverse none none none',
