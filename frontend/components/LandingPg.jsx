@@ -31,7 +31,8 @@ const LandingPg = () => {
         gsap.to(
           '.bottom-layer',
           {
-             padding:"5vw 0vw",
+             padding:"15vw 0vw",
+            //  paddingTop:"50vh",
              marginLeft:"0px",
               width:"100vw",
               duration: 0.3,
