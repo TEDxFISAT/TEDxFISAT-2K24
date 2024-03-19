@@ -128,20 +128,11 @@ const About = () => {
 
   return (
     <div className='bottom-layer' >
-        <div className='section-wrapper'>
-          <div style={{width:"70%"}}>
-          <p className='reveal-heading'><span>OUR </span> THEME</p>
+        <div className='section-wrapper' style={window.innerHeight>window.innerWidth?{flexDirection:"column",fontSize:"0.8em",height:"object-fit"}:null}>
+          <div style={window.innerHeight<window.innerWidth?{width:"70%", border:"1px solid white"}:{width:"90%"}}>
+          <p className='reveal-heading' style={window.innerHeight>window.innerWidth?{fontSize:"3em"}:null}><span style={window.innerHeight>window.innerWidth?{fontSize:"1em"}:null}>OUR </span> THEME</p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
-            The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
-            Elementary”, which encapsulates the idea of reshaping fundamental elements. This 
-            overarching theme delves deeply into the transformative journey of reconstructing core 
-            components across various sectors or domains. It emphasizes the significant impact that 
-            changes at the foundational level can have on the broader framework and mindset of a 
-            system. These elementary changes are vital as they can either catalyse improvement or 
-            present challenges. The discussions at TEDxFISAT will explore innovative approaches, 
-            initiatives, and insights aimed at promoting positive change and evolution within 
-            fundamental structures. This discourse will foster conversations about strategies for 
-            sustainable progress and holistic development.
+          TEDxFISAT 2024 focuses on "Refashioning the Elementary," highlighting the transformative process of reshaping core elements across sectors. This theme emphasizes the profound impact foundational changes can have on broader frameworks and mindsets. Discussions will explore innovative approaches for promoting positive change and evolution within fundamental structures. TEDxFISAT aims to foster conversations about sustainable progress and holistic development, recognizing the significance of catalyzing improvements while navigating potential challenges.
           </p>
           </div>
           <div className='About-img-wrapper'>
@@ -150,24 +141,15 @@ const About = () => {
           </div>
         </div>
         <br/><br/>
-        <div className='section-wrapper'>
+        <div className='section-wrapper' style={window.innerHeight>window.innerWidth?{flexDirection:"column",fontSize:"0.8em",height:"object-fit"}:null}>
         <div className='About-img-wrapper'>
             <div></div>
             <img src={Library}></img>
           </div>
-        <div style={{width:"70%"}}>
-          <p className='reveal-heading'>TEDx<span style={{fontSize:"5rem"}}>FISAT</span></p>
+        <div style={window.innerHeight<window.innerWidth?{width:"70%", border:"1px solid white"}:{width:"90%"}}>
+          <p className='reveal-heading' style={window.innerHeight>window.innerWidth?{fontSize:"3em"}:null} >TEDx<span style={{fontSize:"1em"}}>FISAT</span></p>
           <p className='reveal-text' data-bg-color="#606060" data-fg-color="white">
-            The central focus of TEDxFISAT 2024 revolves around the theme “Refashioning the 
-            Elementary”, which encapsulates the idea of reshaping fundamental elements. This 
-            overarching theme delves deeply into the transformative journey of reconstructing core 
-            components across various sectors or domains. It emphasizes the significant impact that 
-            changes at the foundational level can have on the broader framework and mindset of a 
-            system. These elementary changes are vital as they can either catalyse improvement or 
-            present challenges. The discussions at TEDxFISAT will explore innovative approaches, 
-            initiatives, and insights aimed at promoting positive change and evolution within 
-            fundamental structures. This discourse will foster conversations about strategies for 
-            sustainable progress and holistic development.
+            TEDxFISAT, which stemmed from TED's mission to research and discover “ideas worth spreading," emerged in 2017, aiming to cultivate an inclusive community of thought leaders dedicated to making a positive impact on society. Organised by undergraduate student directors and staff advisors, TEDxFISAT provides events and resources to enrich FISAT's community. In 2018, our inaugural conference, BREATHTAKING DISARRAY, featured over ten speakers and four performances. We believe in the power of ideas to transform lives and aim to curate knowledge from the region's brightest minds, fostering an environment for engagement and curiosity.
           </p>
           </div>
         </div>

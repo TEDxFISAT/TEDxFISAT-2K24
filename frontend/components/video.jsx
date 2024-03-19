@@ -78,7 +78,7 @@ const Video = () => {
 
       gsap.fromTo('.notHero',{
         scale:0.5,
-        transform:"rotate(30deg)"
+        transform:"rotate(10deg)"
       },{
         scale:1,
         transform:"rotate(0deg)",
@@ -106,7 +106,7 @@ const Video = () => {
       },[])
     return(
         <div className="notHero" style={{height:"100vh", width:"100vw",display:"flex",justifyContent:"center",alignItems:"center",position:"sticky",top:"0vh",marginTop:"50vh"}}>
-          <div className="hero" style={{position:"relative",height:"10vh", width:"10vh",backgroundColor:"black",transform:"rotate(-30deg)", borderRadius:"2.5em",display:"flex",justifyContent:"center",alignItems:"center"}}>
+          <div className="hero" style={{position:"relative",height:"10vh", width:"10vh",backgroundColor:"black",transform:"rotate(-10deg)", borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <FaPlay id="playButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white",zIndex:2,backgroundColor:"black"}}/>
             <FaPause id="pauseButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white",zIndex:1}}/>
           </div>
