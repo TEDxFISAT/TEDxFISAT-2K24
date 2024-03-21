@@ -77,7 +77,7 @@ const Video = () => {
       })
 
       gsap.fromTo('.notHero',{
-        scale:0.5,
+        scale:0.7,
         transform:"rotate(10deg)"
       },{
         scale:1,
