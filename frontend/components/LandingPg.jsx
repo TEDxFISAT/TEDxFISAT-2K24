@@ -120,17 +120,17 @@ const LandingPg = () => {
         <>
       {/* <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px black",width:"100px",height:"100px",zIndex:5,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div> */}
       <DC/>
-      <div className='top-layer'>
+      <div className='top-layer' style={{border:"1px solid"}}>
         {/* <h1>Page 1</h1> */}
-        <div className='titleWrapper'>
-          <div className='titleContainer1'></div>
-          <div className='titleContainer2'> 
+        <div className='titleWrapper' style={{border:"1px solid",overflow:"none"}}>
+          <div className='titleContainer1' style={{border:"1px solid"}}></div>
+          <div className='titleContainer2' style={{border:"1px solid"}}> 
             <div className='TED'>T</div>
             <div className='TED'>E</div>
             <div className='TED'>D</div>
             <div id="X">X</div>
           </div>
-          <div className='titleContainer3'></div>
+          <div className='titleContainer3' style={{border:"1px solid",backgroundColor:"pink"}}></div>
         </div>
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"rgba(255, 0,0, 1)"}}></div>
       </div>
