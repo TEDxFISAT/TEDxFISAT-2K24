@@ -13,7 +13,15 @@ const AlternateLanding = () => {
             <div style={{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
                 {/* <p style={{fontSize:"6rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}><div>T</div><div>E</div>Dx</span>FISAT</p> */}
                 <div style={{display:"flex",fontSize:"6rem",margin:0,padding:0}}>
-                    <div style={{display:"flex",fontWeight:"800",color:"red"}}><div>T</div><div>E</div><div>D</div><div>x</div></div><div>FISAT</div>
+                    <div style={{border:"1px solid",position:"relative",display:"inline-block",minWidth:"12vw",maxWidth:"20vw"}}>
+                        <div style={{display:"flex",justifyContent:"center",fontWeight:"800",color:"red",border:"1px solid red",width:"100%",height:"100%",position:"absolute",transform:"translateX(-77%)"}}>
+                            <div>T</div><div>E</div><div>D</div><div>x</div>
+                        </div>
+                        <div style={{border:"1px solid yellow",width:"100%",height:"100%",position:"absolute",backgroundColor:"black"}}>
+
+                        </div>
+                    </div>
+                    <div>FISAT</div>
                 </div>
                 <p style={{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
                 <div style={{display:"flex",width:"100%",justifyContent:"center",alignItems:"center"}}>
