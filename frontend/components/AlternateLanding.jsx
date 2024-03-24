@@ -78,6 +78,7 @@ const AlternateLanding = () => {
         <div style={{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}}>
             <img src={Scroll} style={{height:"90%",filter:"negative"}}/>
         </div>
+        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"rgba(255, 0,0, 1)"}}></div>
     </div>
 )
 }
