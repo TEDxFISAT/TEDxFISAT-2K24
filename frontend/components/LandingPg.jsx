@@ -1,7 +1,7 @@
 import { useEffect,useRef } from 'react'
 import Scroll from "../data/assets/ScrollDown2.gif"
 import LogoVideo from "../data/assets/LogoVideo.mp4"
-import MapGif from "../data/assets/Location.gif"
+import MapGif from "../data/assets/Location1.gif"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import DC from './DisappearingContainers'
