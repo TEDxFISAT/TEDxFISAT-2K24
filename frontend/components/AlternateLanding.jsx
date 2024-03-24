@@ -10,19 +10,19 @@ const AlternateLanding = () => {
 
         </div>
         <div style={{height:"70vh",width:"100vw",display:"flex"}}>
-            <div style={{height:"70%",width:"40%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",border:"1px solid"}}>
-                <p style={{fontSize:"5rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}>TEDx</span>FISAT</p>
+            <div style={{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
+                <p style={{fontSize:"6rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}>TEDx</span>FISAT</p>
                 <p style={{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
-                <div style={{display:"flex",width:"100%",border:"1px solid"}}>
+                <div style={{display:"flex",width:"100%",justifyContent:"center",alignItems:"center"}}>
                     <img src={MapGif} style={{height:"40px"}}/>
-                    <p style={{fontSize:"1.2rem",margin:0,padding:0,fontWeight:"500"}}>FEDERAL INSTITUTE OF SCIENCE & TECHNOLOGY,ANGAMALY</p>
+                    <p style={{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}}>FEDERAL INSTITUTE OF SCIENCE & TECHNOLOGY,ANGAMALY</p>
                 </div>
             </div>
-            <div style={{height:"115%",width:"60%",overflow:"hidden"}}>
+            <div style={{height:"115%",width:"55%",overflow:"hidden"}}>
                 <video src={LogoVideo} autoPlay muted loop style={{width:"100%",height:"100%",border:"1px solid",transform:"scale(1.8)"}}/>
             </div>
         </div>
-        <div style={{height:"15vh",width:"40vw",textAlign:"center",transform:"translateY(-10vh)"}}>
+        <div style={{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-12vh)"}}>
             <img src={Scroll} style={{height:"90%",filter:"negative"}}/>
         </div>
     </div>
