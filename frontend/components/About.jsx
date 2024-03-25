@@ -4,6 +4,9 @@ import { ScrollTrigger } from 'gsap/all'
 import '../styles/landingpg.css'
 import SplitType from 'split-type'
 import Library from "../data/assets/Library.jpg"
+import logo from "../data/assets/TedxFisat.png"
+import theme from '../data/assets/linkedin.png'
+
 gsap.registerPlugin(ScrollTrigger)
 
 const About = () => {
@@ -137,14 +140,14 @@ const About = () => {
           </div>
           <div className='About-img-wrapper' style={window.innerHeight>window.innerWidth?{height:"45vh",width:"70vw"}:null}>
           <div style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></div>
-            <img src={Library} style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></img>
+            <img src={theme} style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></img>
           </div>
         </div>
         <br/><br/>
         <div className='section-wrapper' style={window.innerHeight>window.innerWidth?{flexDirection:"column-reverse",fontSize:"0.8em",height:"100vh"}:null}>
         <div className='About-img-wrapper' style={window.innerHeight>window.innerWidth?{height:"45vh",width:"70vw"}:null}>
             <div style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></div>
-            <img src={Library} style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></img>
+            <img src={logo} style={window.innerHeight>window.innerWidth?{width:"100%"}:null}></img>
           </div>
         <div style={window.innerHeight<window.innerWidth?{width:"70%"}:{width:"90%"}}>
           <p className='reveal-heading' style={window.innerHeight>window.innerWidth?{fontSize:"3em"}:null} >TEDx<span style={{fontSize:"1em"}}>FISAT</span></p>

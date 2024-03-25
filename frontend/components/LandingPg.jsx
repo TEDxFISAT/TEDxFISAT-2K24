@@ -188,16 +188,16 @@ const LandingPg = () => {
                 <p style={window.innerHeight<window.innerWidth?{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1.4rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
                 <div style={{display:"flex",width:window.innerHeight<window.innerWidth?"100%":"70%",justifyContent:"center",alignItems:"center"}}>
                     <img src={MapGif} style={{height:"40px"}}/>
-                    <p style={window.innerHeight<window.innerWidth?{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1rem",margin:0,padding:0,fontWeight:"500"}}><span style={{color:"red"}}>F</span>EDERAL <span style={{color:"red"}}>I</span>NSTITUTE OF <span style={{color:"red"}}>S</span>CIENCE <span style={{color:"red"}}>& T</span>ECHNOLOGY,ANGAMALY</p>
+                    <p style={window.innerHeight<window.innerWidth?{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1rem",margin:0,padding:0,fontWeight:"500"}}>FISAT,Angamaly</p>
                 </div>
             </div>
             <div style={window.innerHeight<window.innerWidth?{height:"115%",width:"55%",overflow:"hidden"}:{height:"60vh",width:"100%",overflow:"hidden"}}>
                 <video src={LogoVideo} autoPlay muted loop style={{width:"100%",height:"100%",transform:"scale(1.8)"}}/>
             </div>
         </div>
-        <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
+        {/* <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
             <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"1%",height:"50%"}}/>
-        </div>
+        </div> */}
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"#ED0000"}}></div>
     </div>
       <Video/>
