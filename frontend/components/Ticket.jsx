@@ -24,10 +24,11 @@ const Ticket = () => {
                 },
                 {
                     opacity:1,
+                    delay:0.5,
                     duration: 0.8,
                     stagger: 0.08,
                     y:20,
-                    delay:0.1,
+                    // delay:0.1,
                     ease:"back.out",
                     scrollTrigger: {
                         trigger: '.reveal-headingTicket',
@@ -42,6 +43,25 @@ const Ticket = () => {
         });
     }, []);
 
+    useEffect(() => {
+        gsap.fromTo('.ticket-image',{
+            opacity:0,
+            x:-400
+          },{
+            x:0,
+            duration:1,
+            opacity:1,
+            scrollTrigger: {
+                trigger: '.ticket-image',
+                // start: 'top 80%',
+                // end: 'top 20%',
+                // scrub: true,
+                // markers: true,
+                toggleActions: 'restart none none none',
+            },
+          })
+    },[])
+
 
   return (
     <div className='ticket' style={window.innerHeight<window.innerWidth?{width:"100vw",height:"100vh"}:{height:"170vh"}}>
@@ -50,7 +70,7 @@ const Ticket = () => {
           src={window.innerHeight<window.innerWidth?tkt:tktv} 
           alt="Ticket"
           className="ticket-image"
-          style={{width:"90%",borderRadius:"15px",marginLeft:"5%",boxShadow:"0 0 10px #1e1e1e",border:"1px solid black"}}
+          style={{width:"90%",borderRadius:"15px",marginLeft:"5%",boxShadow:"0 0 10px #1e1e1e",border:"1px solid black",opacity:0}}
         />
         <br/><button id="exploreBtn">EXPLORE</button>
     </div>
