@@ -171,7 +171,7 @@ const LandingPg = () => {
         <div style={{height:window.innerHeight<window.innerWidth?"15vh":"10vh",width:"100vw",backgroundColor:"black"}}>
 
         </div>
-        <div style={{height:window.innerHeight<window.innerWidth?"70vh":"80vh",width:"100vw",display:"flex",flexDirection:"column"}}>
+        <div style={{height:window.innerHeight<window.innerWidth?"70vh":"80vh",width:"100vw",display:"flex",flexDirection:window.innerHeight<window.innerWidth?"row":"column"}}>
             <div style={window.innerHeight<window.innerWidth?{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}:{height:"30%",width:"100vw",display:"flex",flexDirection:"column",justifyContent:"space-evenly",alignItems:"center"}}>
                 {/* <p style={{fontSize:"6rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}><div>T</div><div>E</div>Dx</span>FISAT</p> */}
                 {window.innerHeight<window.innerWidth?<div style={window.innerHeight<window.innerWidth?{display:"flex",fontSize:"6rem",margin:0,padding:0}:{display:"flex",fontSize:"3rem",margin:0,padding:0}}>
