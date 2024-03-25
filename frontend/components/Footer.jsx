@@ -1,37 +1,59 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { CiPhone } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
+import "../styles/Footer.css"; // Import the CSS file
 
-const page = () => {
+const Footer = () => {
   return (
-    <>
-      <footer className="w-full flex bg-black h-80 justify-between">
-        <div className="h-full justify-center ml-28 flex flex-col">
-          <h1 className="text-3xl">
-            Ted<span>x</span>FISAT
-          </h1>
+    <div style={{height:"70vh",width:"100vw",border:"1px solid red"}}>
+      <footer className="footer" style={{height:"54vh",marginLeft:"1%",marginTop:"8vh",width:"98%",display:"flex",backgroundColor:"black",borderRadius:"15px",justifyContent:"space-around"}}>
+        <div className="left-section">
+          <h1>TED<span>x</span>FISAT</h1>
           <p>
-            This independent TEDx event<br></br>
-            is operated under license<br></br>
+            This independent TEDx event<br />
+            is operated under license<br />
             from TED.
           </p>
 
-          <div className="flex space-x-8 text-3xl mt-10">
-            <FaInstagram className="hover:cursor:pointer transition transform duration-300 hover:text-red-600 " />
-            <FaLinkedin className="hover:cursor:pointer transition transform duration-300 hover:text-red-600 " />
-            <FaYoutube className="hover:cursor:pointer transition transform duration-300 hover:text-red-600 " />
+          <div className="social-icons" style={{zIndex:10}}>
+           <a href="https://www.instagram.com/tedxfisat24?igsh=MW5pcGdqYmwydjl2bQ=="> <FaInstagram className="icon" /></a>
+           <a href="https://www.linkedin.com/company/tedxfisat/mycompany/"> <FaLinkedin className="icon" /></a>
+           <a href="/">  <FaYoutube className="icon" /></a>
           </div>
         </div>
 
-        <div className="mr-28 flex space-y-3  flex-col items-center justify-center h-full bottom-0">
-          <div className="w-96 rounded-2xl h-48 bg-red-500"></div>
+        <div className='Contact'>
+        <h1>Contact Us</h1>
+        <div>
+            <ul className='list'>
+            <li>
+                <CiPhone />
+                </li>
+                <li>
+                <MdOutlineEmail />
+                </li>
+                <li>
+                <FaInstagram />
+                </li>
+
+            </ul>
+
+            
+        </div>
+    </div>
+
+        <div className="right-section">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180250515!2d76.40665101478143!3d10.231517592692693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1678482024451!5m2!1sen!2sin" className="map" ></iframe>
           <p>
-            Federal Institute of Science and Technology,<br></br>
-            Mookannoor,Angamaly,Eranakulam,<br></br>Kerala,India-653523
+            Federal Institute of Science and Technology,<br />
+            Mookannoor, Angamaly, Eranakulam,<br />
+            Kerala, India-653523
           </p>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 
-export default page;
+export default Footer;
