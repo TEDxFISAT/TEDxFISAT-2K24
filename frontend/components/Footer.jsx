@@ -9,7 +9,7 @@ const Footer = () => {
     <div style={{height:"70vh",width:"100vw",border:"1px solid red"}}>
       <footer className="footer" style={{height:"54vh",marginLeft:"1%",marginTop:"8vh",width:"98%",display:"flex",backgroundColor:"black",borderRadius:"15px",justifyContent:"space-around"}}>
         <div className="left-section">
-          <h1>TED<span>x</span>FISAT</h1>
+          <h1><span style={{color:"red"}}>TEDx</span>FISAT</h1>
           <p>
             This independent TEDx event<br />
             is operated under license<br />
