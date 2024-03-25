@@ -6,6 +6,8 @@ import SplitType from 'split-type'
 import { useEffect,useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import { Link } from 'react-router-dom';
+
 gsap.registerPlugin(ScrollTrigger)
 
 const Ticket = () => {
@@ -89,7 +91,7 @@ const Ticket = () => {
           className="ticket-image"
           style={{width:"90%",borderRadius:"15px",marginLeft:"5%",boxShadow:"0 0 10px #1e1e1e",border:"1px solid black",opacity:0}}
         />
-        <br/><button id="exploreBtn">EXPLORE</button>
+        <br/><button  id="exploreBtn">EXPLORE</button>
     </div>
   );
 };

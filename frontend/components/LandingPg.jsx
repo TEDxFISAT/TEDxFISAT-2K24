@@ -11,6 +11,7 @@ import Video from './video'
 import Speakers from './SpeakersMain'
 import Ticket from './Ticket'
 import Footer from './Footer'
+import Navbar from './Navbar'
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
@@ -169,7 +170,6 @@ const LandingPg = () => {
       <DC/>
       <div style={{height:"100vh",width:"100vw",zIndex:-1,overflow:"hidden",position:"sticky",top:0}}>
         <div style={{height:window.innerHeight<window.innerWidth?"15vh":"10vh",width:"100vw",backgroundColor:"black"}}>
-
         </div>
         <div style={{height:window.innerHeight<window.innerWidth?"70vh":"80vh",width:"100vw",display:"flex",flexDirection:window.innerHeight<window.innerWidth?"row":"column"}}>
             <div style={window.innerHeight<window.innerWidth?{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}:{height:"30%",width:"100vw",display:"flex",flexDirection:"column",justifyContent:"space-evenly",alignItems:"center"}}>

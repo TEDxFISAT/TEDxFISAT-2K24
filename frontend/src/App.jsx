@@ -8,6 +8,8 @@ import { Routes,Route } from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom'
 import AlternateLanding from '../components/AlternateLanding'
 import Team from '../components/Team'
+import Register from '../components/Register'
+
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/Sponsors" element={<Sponsors/>}/>
         <Route path='/1' element={<AlternateLanding/>}/>
         <Route path='/Team' element={<Team/>}/>
+        <Route path='/Register' element={<Register/>}/>
+
       </Routes>
     </BrowserRouter>
     )
