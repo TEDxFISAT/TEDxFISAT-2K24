@@ -9,6 +9,7 @@
     left:50%;
     position: absolute;
     transform: translateX(-50%);
+    font-weight: 50;
 }
 
 
@@ -16,4 +17,5 @@
     /* color: black;
     background-color: red; */
     transform: translateX(-50%) scale(1.1);
+    border: 1px solid red;
 }
