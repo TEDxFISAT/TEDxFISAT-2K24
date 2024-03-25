@@ -6,8 +6,14 @@ gsap.registerPlugin(ScrollTrigger)
 const DC = () => {
 
   let redboxes = []
-  for(let i=0;i<6;i++){
-    redboxes.push(<div className={i%2?"odd":"even"}></div>)
+  if( window.innerHeight<window.innerWidth){
+    for(let i=0;i<6;i++){
+      redboxes.push(<div className={i%2?"odd":"even"}></div>)
+    }
+  }else{
+    for(let i=0;i<5;i++){
+      redboxes.push(<div style={{width:"20vw"}}></div>)
+    }
   }
 
   useEffect(() => {
