@@ -19,6 +19,26 @@ const LandingPg = () => {
     const cursorblobRef = useRef(null)
 
     useEffect(() => {
+
+      gsap.fromTo(".Navbarbg",{
+        y:-400,
+        opacity:0.8,
+      },{
+        y:0,
+        duration:1,
+        delay:3,
+        opacity:1,
+        // backgroundColor:"black",
+        scrollTrigger:{
+          trigger:"#disapperaingContainer",
+          // start:"80% 50%",
+          // end:"bottom -100%",
+          // scrub:true,
+          // markers:true,
+          toggleActions:"restart none none none"}
+      })
+
+
         gsap.fromTo("#zoom",{
           opacity:0.8,
           scale:0,
