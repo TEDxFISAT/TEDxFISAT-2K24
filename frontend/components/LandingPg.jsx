@@ -8,6 +8,8 @@ import DC from './DisappearingContainers'
 import '../styles/landingpg.css'
 import About from './About'
 import Video from './video'
+import Speakers from './SpeakersMain'
+import Ticket from './Ticket'
 gsap.registerPlugin(ScrollTrigger)
 
 const LandingPg = () => {
@@ -197,6 +199,8 @@ const LandingPg = () => {
     </div>
       <Video/>
       <About/>
+      <Speakers/>
+      <Ticket/>
       <div style={{padding:0,margin:0,height:"100vh",color:"black"}}>
         <h1>Page 3</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
