@@ -60,6 +60,23 @@ const Ticket = () => {
                 toggleActions: 'restart none none none',
             },
           })
+
+        //   gsap.fromTo('#exploreBtn',{
+        //     opacity:0,
+        //     scale:0
+        //   },{
+        //     opacity:1,
+        //     scale:1,
+        //     // duration:1,
+        //     scrollTrigger: {
+        //         trigger: '#exploreBtn',
+        //         // start: 'top 80%',
+        //         // end: 'top 20%',
+        //         // scrub: true,
+        //         // markers: true,
+        //         toggleActions: 'restart none none none',
+        //     },
+        //   })
     },[])
 
 
