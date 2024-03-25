@@ -9,6 +9,7 @@ import {BrowserRouter} from 'react-router-dom'
 import AlternateLanding from '../components/AlternateLanding'
 import Team from '../components/Team'
 import Register from '../components/Register'
+import Navbar from '../components/Navbar'
 
 
 
@@ -29,6 +30,7 @@ function App() {
   return(
     // <LandingPg/>
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<LandingPg/>}/>
         <Route path="/Speakers" element={<SpeakerMain/>}/>

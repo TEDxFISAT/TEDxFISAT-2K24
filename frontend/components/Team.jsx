@@ -1,6 +1,7 @@
 import React from 'react';
 import teamData from '../data/teamData';
 import '../styles/team.css';
+import Footer from './Footer';
 
 const Team = () => {
   return (
@@ -23,6 +24,7 @@ const Team = () => {
         </div>
       ))}
     </div>
+
   );
 };
 
