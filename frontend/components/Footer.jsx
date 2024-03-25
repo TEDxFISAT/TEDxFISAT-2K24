@@ -7,7 +7,7 @@ import "../styles/Footer.css"; // Import the CSS file
 const Footer = () => {
   return (
     <div style={{height:"70vh",width:"100vw",border:"1px solid red"}}>
-      <footer className="footer" style={{height:"54vh",marginLeft:"1%",marginTop:"8vh",width:"98%",display:"flex",backgroundColor:"black",borderRadius:"15px",justifyContent:"space-around"}}>
+      <footer className="footer" style={{height:"54vh",marginLeft:"1%",marginTop:"8vh",width:"98%",display:"flex",backgroundColor:"black",borderRadius:"15px",justifyContent:"space-around",alignItems:"center"}}>
         <div className="left-section">
           <h1><span style={{color:"red"}}>TEDx</span>FISAT</h1>
           <p>
@@ -23,23 +23,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='Contact'>
-        <h1>Contact Us</h1>
+        <div className='Contact' style={{border:"1px solid white"}}>
+        <h1 style={{fontSize:"3rem"}}>CONTACT US</h1>
         <div>
-            <ul className='list'>
-            <li>
-                <CiPhone />
-                </li>
-                <li>
-                <MdOutlineEmail />
-                </li>
-                <li>
-                <FaInstagram />
-                </li>
-
-            </ul>
-
-            
+            <CiPhone className="icon"/>
+            <MdOutlineEmail className="icon"/>
+            <FaInstagram className="icon"/>
         </div>
     </div>
 
