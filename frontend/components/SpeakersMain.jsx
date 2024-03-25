@@ -15,7 +15,7 @@ function App() {
   return (
  
 
-    <div className="containerr speaker-page">
+    <div className="containerr speaker-page" style={{backgroundColor:"black",borderRadius:"30px",marginTop:0}}>
       <h1 className="heading">Speakers</h1>
       <Swiper
         effect={'coverflow'}

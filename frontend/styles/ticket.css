@@ -1,0 +1,19 @@
+#exploreBtn{
+    margin-top: 3%;
+    height:18vh;
+    width:18vh;
+    box-shadow:0 0 15px #1e1e1e;
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    border: 1px solid black;
+    left:50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+#exploreBtn:hover {
+    /* color: black;
+    background-color: red; */
+    transform: translateX(-50%) scale(1.1);
+}

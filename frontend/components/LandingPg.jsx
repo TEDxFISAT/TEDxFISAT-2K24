@@ -195,7 +195,7 @@ const LandingPg = () => {
         <div style={{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}}>
             <img src={Scroll} style={{height:"100%",filter:"negative"}}/>
         </div>
-        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"red"}}></div>
+        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"#ED0000"}}></div>
     </div>
       <Video/>
       <About/>
