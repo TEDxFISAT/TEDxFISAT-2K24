@@ -166,13 +166,13 @@ const LandingPg = () => {
       {/* <div id='cursorblob' style={{position:"fixed",backgroundColor:"rgba(255, 0,0, 1)",boxShadow:"0 0 10px black",width:"100px",height:"100px",zIndex:5,top:50,left:50,borderRadius:"50%"}} ref={cursorblobRef}></div> */}
       <DC/>
       <div style={{height:"100vh",width:"100vw",zIndex:-1,overflow:"hidden",position:"sticky",top:0}}>
-        <div style={{height:"15vh",width:"100vw",backgroundColor:"black"}}>
+        <div style={{height:window.innerHeight<window.innerWidth?"15vh":"10vh",width:"100vw",backgroundColor:"black"}}>
 
         </div>
-        <div style={{height:"70vh",width:"100vw",display:"flex",border:"1px solid green",flexDirection:"column"}}>
-            <div style={window.innerHeight<window.innerWidth?{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}:{height:"30%",width:"100vw",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",border:"1px solid"}}>
+        <div style={{height:window.innerHeight<window.innerWidth?"70vh":"80vh",width:"100vw",display:"flex",flexDirection:"column"}}>
+            <div style={window.innerHeight<window.innerWidth?{height:"70%",width:"45%",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}:{height:"30%",width:"100vw",display:"flex",flexDirection:"column",justifyContent:"space-evenly",alignItems:"center"}}>
                 {/* <p style={{fontSize:"6rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}><div>T</div><div>E</div>Dx</span>FISAT</p> */}
-                <div style={window.innerHeight<window.innerWidth?{display:"flex",fontSize:"6rem",margin:0,padding:0}:{display:"flex",fontSize:"3rem",margin:0,padding:0}}>
+                {window.innerHeight<window.innerWidth?<div style={window.innerHeight<window.innerWidth?{display:"flex",fontSize:"6rem",margin:0,padding:0}:{display:"flex",fontSize:"3rem",margin:0,padding:0}}>
                     <div style={{position:"relative",display:"inline-block",minWidth:"12vw",maxWidth:"20vw",overflow:"hidden"}}>
                         <div id="title" style={{display:"flex",justifyContent:"center",fontWeight:"800",backgroundColor:"red",color:"black",minWidth:"100%",minHeight:"100%",transform:"translateX(-76%)"}}>
                             <div className="TEDD">T</div><div className="TEDD">E</div><div className="TEDD">D</div><div>x</div>
@@ -182,19 +182,19 @@ const LandingPg = () => {
                         </div>
                     </div>
                     <div>FISAT</div>
-                </div>
-                <p style={window.innerHeight<window.innerWidth?{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1.2rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
-                <div style={{display:"flex",width:"100%",justifyContent:"center",alignItems:"center"}}>
+                </div>:<p style={{fontSize:"3.5rem",fontWeight:"800",margin:0}}><span style={{color:"red"}}>TEDx</span>FISAT</p>}
+                <p style={window.innerHeight<window.innerWidth?{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1.4rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
+                <div style={{display:"flex",width:window.innerHeight<window.innerWidth?"100%":"70%",justifyContent:"center",alignItems:"center"}}>
                     <img src={MapGif} style={{height:"40px"}}/>
-                    <p style={window.innerHeight<window.innerWidth?{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"0.9rem",margin:0,padding:0,fontWeight:"500"}}><span style={{color:"red"}}>F</span>EDERAL <span style={{color:"red"}}>I</span>NSTITUTE OF <span style={{color:"red"}}>S</span>CIENCE <span style={{color:"red"}}>& T</span>ECHNOLOGY,ANGAMALY</p>
+                    <p style={window.innerHeight<window.innerWidth?{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1rem",margin:0,padding:0,fontWeight:"500"}}><span style={{color:"red"}}>F</span>EDERAL <span style={{color:"red"}}>I</span>NSTITUTE OF <span style={{color:"red"}}>S</span>CIENCE <span style={{color:"red"}}>& T</span>ECHNOLOGY,ANGAMALY</p>
                 </div>
             </div>
             <div style={window.innerHeight<window.innerWidth?{height:"115%",width:"55%",overflow:"hidden"}:{height:"60vh",width:"100%",overflow:"hidden"}}>
-                <video src={LogoVideo} autoPlay muted loop style={{width:"100%",height:"100%",border:"1px solid",transform:"scale(1.8)"}}/>
+                <video src={LogoVideo} autoPlay muted loop style={{width:"100%",height:"100%",transform:"scale(1.8)"}}/>
             </div>
         </div>
         <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
-            <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"5%",height:"60%"}}/>
+            <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"1%",height:"50%"}}/>
         </div>
         <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"#ED0000"}}></div>
     </div>
