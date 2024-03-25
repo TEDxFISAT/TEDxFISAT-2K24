@@ -99,7 +99,8 @@ const LandingPg = () => {
       },[])
 
       useEffect(() => {
-        const tlLP = gsap.timeline();
+        if(window.innerHeight<window.innerWidth){
+          const tlLP = gsap.timeline();
         tlLP.fromTo('#titleWrapper',{
             y:'-100%'
           },{
@@ -134,6 +135,7 @@ const LandingPg = () => {
               from:'end'
             },
           })
+        }
 
     },[])
 
