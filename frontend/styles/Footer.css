@@ -20,6 +20,7 @@
   .left-section .social-icons {
     display: flex;
     justify-content: center;
+    z-index: 10;
     /* margin-top: 10px; */
   }
 
@@ -29,6 +30,7 @@
     font-size: 2.5rem;
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
+    z-index: 10;
   }
   
   .icon:hover {
@@ -37,6 +39,7 @@
   }
 
   .right-section {
+    z-index: 10;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;

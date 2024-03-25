@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-import img from '../data/assets/sponsorMock.jpg';
+import img from '../data/assets/ComingSoon.png';
 import '../styles/spkr.css'
 
 
