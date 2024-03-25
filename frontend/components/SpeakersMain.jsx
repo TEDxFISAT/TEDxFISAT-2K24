@@ -39,7 +39,7 @@ function App() {
                 // delay:0.1,
                 ease:"back.out",
                 scrollTrigger: {
-                    trigger: '.reveal-headingSpeaker',
+                    trigger: '#exploreBtn',
                     // start: 'top 80%',
                     // end: 'top 20%',
                     // scrub: true,
