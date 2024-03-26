@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
+import logo from '../public/TedLogo.png'
 
 import '../styles/Nav.css';
 const Navbar = () => {
@@ -39,11 +40,11 @@ const Navbar = () => {
         <div class="bars" id="bar3"></div>
     </label>
 
-             <h1>X</h1>
+    <img src={logo} height={50} width={120}></img>
           </ul>
 
           <ul className='Nav'>
-            <h1>X</h1>
+            <img src={logo} height={50} width={120}></img>
             <li className={activeItem === 'Home' ? 'active' : ''} onClick={() => handleItemClick('Home')}>
               <Link to='/'>Home</Link>
             </li>
