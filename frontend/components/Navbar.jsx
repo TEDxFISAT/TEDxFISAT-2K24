@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from '../public/TedLogo.png'
+import logo from '../data/assets/logo-white.png'
 
 import '../styles/Nav.css';
 const Navbar = () => {
