@@ -159,6 +159,12 @@
   list-style: none;
   
 }
+
+.MobNav a{
+  text-decoration: none;
+  color: white;
+}
+
 .MobNav a:hover{
   cursor: pointer;
   transition: all 0.8s ease;
