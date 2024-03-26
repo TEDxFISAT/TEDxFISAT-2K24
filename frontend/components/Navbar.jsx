@@ -49,7 +49,7 @@ const Navbar = () => {
               <Link to='/'>Home</Link>
             </li>
             <li className={activeItem === 'Speakers' ? 'active' : ''} onClick={() => handleItemClick('Speakers')}>
-              <Link to='#Speakers'>Speakers</Link>
+              <Link to='/Speakers'>Speakers</Link>
             </li>
             <li className={activeItem === 'Sponsors' ? 'active' : ''} onClick={() => handleItemClick('Sponsors')}>
               <Link to='/Sponsors'>Sponsors</Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
               <Link to='/'>Home</Link>
             </li>
             <li className={activeItem === 'Speakers' ? 'active' : ''} onClick={() => handleClick('Speakers')}>
-              <Link to='#Speakers'>Speakers</Link>
+              <Link to='/Speakers'>Speakers</Link>
             </li>
             <li className={activeItem === 'Sponsors' ? 'active' : ''} onClick={() => handleClick('Sponsors')}>
               <Link to='/Sponsors'>Sponsors</Link>
