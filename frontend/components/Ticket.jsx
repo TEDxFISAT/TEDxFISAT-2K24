@@ -84,7 +84,7 @@ const Ticket = () => {
 
   return (
     <div className='ticket' style={window.innerHeight<window.innerWidth?{width:"100vw",height:"100vh"}:{height:"170vh"}}>
-      <h1 className="reveal-headingTicket" style={{color:"black",fontWeight:"800",fontSize:"5rem",margin:"0 0 3% 5%",overflow:"hidden"}}>TICKET</h1>
+      <h1 className="reveal-headingTicket" style={{color:"white",fontWeight:"800",fontSize:"5rem",margin:"0 0 3% 5%",overflow:"hidden"}}>TICKET</h1>
         <img
           src={window.innerHeight<window.innerWidth?tkt:tktv} 
           alt="Ticket"

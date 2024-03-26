@@ -75,7 +75,7 @@ function App() {
  
 
     <div className="containerr speaker-page" style={{backgroundColor:"black",borderRadius:"30px",marginTop:0}}>
-      <h1 className="reveal-headingSpeaker"  style={{color:"white",fontWeight:"800",fontSize:"5rem",margin:"0 0 3% 5%",overflow:"hidden"}} >Speakers</h1>
+      <h1 className="reveal-headingSpeaker"  style={{color:"white",fontWeight:"800",fontSize:"5rem",margin:"0 0 3% 5%",overflow:"hidden"}} >SPEAKERS</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}

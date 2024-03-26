@@ -205,7 +205,7 @@ const LandingPg = () => {
                     </div>
                     <div>FISAT</div>
                 </div>:<p style={{fontSize:"3.5rem",fontWeight:"800",margin:0}}><span style={{color:"red"}}>TEDx</span>FISAT</p>}
-                <p style={window.innerHeight<window.innerWidth?{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1.4rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2<span style={{color:"red"}}>K</span>24</p>
+                <p style={window.innerHeight<window.innerWidth?{fontSize:"2rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1.4rem",margin:0,padding:0,fontWeight:"500"}}>16th APRIL 2024</p>
                 <div style={{display:"flex",width:window.innerHeight<window.innerWidth?"100%":"70%",justifyContent:"center",alignItems:"center"}}>
                     <img src={MapGif} style={{height:"40px"}}/>
                     <p style={window.innerHeight<window.innerWidth?{fontSize:"1.12rem",margin:0,padding:0,fontWeight:"500"}:{fontSize:"1rem",margin:0,padding:0,fontWeight:"500"}}>FISAT,Angamaly</p>

@@ -50,7 +50,7 @@ const Footer = () => {
 
 
   return (
-    <div style={window.innerHeight<window.innerWidth?{height:"70vh",width:"100vw",border: "0.01px solid red"}:{height:"100vh",width:"100vw"}}>
+    <div style={window.innerHeight<window.innerWidth?{height:"70vh",width:"100vw",border: "0.01px solid rgba(255, 255, 255, 0)"}:{height:"100vh",width:"100vw"}}>
       <footer className="footer" style={window.innerHeight<window.innerWidth?{height:"54vh",marginLeft:"1%",marginTop:"8vh",width:"98%",display:"flex",backgroundColor:"black",borderRadius:"15px",justifyContent:"space-around",alignItems:"center",overflow:"hidden"}:{height:"90vh",marginLeft:"1%",marginTop:"5vh",width:"98%",display:"flex",flexDirection:"column",backgroundColor:"black",paddingBottom:"8vh",borderRadius:"15px",justifyContent:"space-between",alignItems:"center",overflow:"hidden"}}>
         <div className="left-section" style={window.innerHeight<window.innerWidth?{height:"65%",marginBottom:0}:{height:"20%"}}>
           <h1><span style={{color:"red"}}>TEDx</span>FISAT</h1>
