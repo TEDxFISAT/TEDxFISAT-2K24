@@ -32,9 +32,13 @@ const Navbar = () => {
       <div className={`Navbarbg ${Open ? 'no-scroll' : ''}`}> 
         <nav className='NavB'>
           <ul className='mobMenu'>
-            <button onClick={toggleMenu}>
-               <RxHamburgerMenu />
-             </button>
+          <input type="checkbox" id="checkbox"  onChange={() => toggleMenu()}></input>
+    <label for="checkbox" class="toggle">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+    </label>
+
              <h1>X</h1>
           </ul>
 
