@@ -218,7 +218,7 @@ const LandingPg = () => {
         {/* <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
             <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"1%",height:"50%"}}/>
         </div> */}
-        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"#ED0000"}}></div>
+        <div id="zoom" style={{clipPath:"circle(10% at 50% 50%)",backgroundColor:"rgba(255, 255, 255, 0.2)",backdropFilter:"blur(10px)",boxShadow:"0 0 20px white"}}></div>
     </div>
       <Video/>
       <About/>
