@@ -52,7 +52,7 @@ const Navbar = () => {
               <Link to='/Speakers'>Speakers</Link>
             </li>
             <li className={activeItem === 'Sponsors' ? 'active' : ''} onClick={() => handleItemClick('Sponsors')}>
-              <Link to='/Sponsors'>Sponsors</Link>
+              <Link to='/#'>Sponsors</Link>
             </li>
             <li className={activeItem === 'Team' ? 'active' : ''} onClick={() => handleItemClick('Team')}>
               <Link to='/Team'>Team</Link>
