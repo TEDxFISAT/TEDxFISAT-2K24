@@ -150,7 +150,8 @@
   place-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: rgb(117, 117, 117);
+  background:rgb(117, 117, 117) ;
 }
 
 .MobNav li{
