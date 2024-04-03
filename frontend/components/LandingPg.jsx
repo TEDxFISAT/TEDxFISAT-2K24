@@ -123,78 +123,78 @@ const LandingPg = () => {
     // })
   }, []);
 
-  useEffect(() => {
-    if (window.innerHeight < window.innerWidth) {
-      const tlLP = gsap.timeline();
-      tlLP.fromTo(
-        "#titleWrapper",
-        {
-          y: "-100%",
-        },
-        {
-          y: "-200%",
-          duration: 1,
-          delay: 2.2,
-        }
-      );
+  // useEffect(() => {
+  //   if (window.innerHeight < window.innerWidth) {
+  //     const tlLP = gsap.timeline();
+  //     tlLP.fromTo(
+  //       "#titleWrapper",
+  //       {
+  //         y: "-100%",
+  //       },
+  //       {
+  //         y: "-200%",
+  //         duration: 1,
+  //         delay: 2.2,
+  //       }
+  //     );
 
-      tlLP.to("#title", {
-        backgroundColor: "black",
-        color: "red",
-        duration: 0.2,
-      });
+  //     tlLP.to("#title", {
+  //       backgroundColor: "black",
+  //       color: "red",
+  //       duration: 0.2,
+  //     });
 
-      tlLP.fromTo(
-        "#title",
-        {
-          x: "-76%",
-        },
-        {
-          x: 0,
-          duration: 1,
-        }
-      );
+  //     tlLP.fromTo(
+  //       "#title",
+  //       {
+  //         x: "-76%",
+  //       },
+  //       {
+  //         x: 0,
+  //         duration: 1,
+  //       }
+  //     );
 
-      gsap.fromTo(
-        ".TEDD",
-        {
-          opacity: 0,
-          scale: 0,
-        },
-        {
-          scale: 1,
-          delay: 3.4,
-          duration: 0.7,
-          opacity: 1,
-          stagger: {
-            amount: 0.3,
-            from: "end",
-          },
-        }
-      );
-    }
-  }, []);
+  //     gsap.fromTo(
+  //       ".TEDD",
+  //       {
+  //         opacity: 0,
+  //         scale: 0,
+  //       },
+  //       {
+  //         scale: 1,
+  //         delay: 3.4,
+  //         duration: 0.7,
+  //         opacity: 1,
+  //         stagger: {
+  //           amount: 0.3,
+  //           from: "end",
+  //         },
+  //       }
+  //     );
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    const cursorBlob = cursorblobRef.current;
+  // useEffect(() => {
+  //   const cursorBlob = cursorblobRef.current;
 
-    const handleMouseMove = (e) => {
-      const x = e.clientX - cursorBlob.clientWidth / 2;
-      const y = e.clientY - cursorBlob.clientHeight / 2;
+  //   const handleMouseMove = (e) => {
+  //     const x = e.clientX - cursorBlob.clientWidth / 2;
+  //     const y = e.clientY - cursorBlob.clientHeight / 2;
 
-      gsap.to(cursorBlob, {
-        duration: 0.8,
-        left: x,
-        top: y,
-      });
-    };
+  //     gsap.to(cursorBlob, {
+  //       duration: 0.8,
+  //       left: x,
+  //       top: y,
+  //     });
+  //   };
 
-    document.addEventListener("mousemove", handleMouseMove);
+  //   document.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
 
   //X popping up and then the whole thing pops up from left n moves to the right
 
