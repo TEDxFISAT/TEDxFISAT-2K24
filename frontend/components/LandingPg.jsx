@@ -15,113 +15,113 @@ import Navbar from "./Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
 const LandingPg = () => {
-  const cursorblobRef = useRef(null);
+  //const cursorblobRef = useRef(null);
 
-  useEffect(() => {
-    gsap.fromTo(
-      ".Navbarbg",
-      {
-        y: -400,
-        opacity: 0.8,
-      },
-      {
-        y: 0,
-        duration: 1,
-        delay: 3,
-        opacity: 1,
-        // backgroundColor:"black",
-        scrollTrigger: {
-          trigger: "#disapperaingContainer",
-          // start:"80% 50%",
-          // end:"bottom -100%",
-          // scrub:true,
-          // markers:true,
-          toggleActions: "restart none none none",
-        },
-      }
-    );
+  // useEffect(() => {
+  //   gsap.fromTo(
+  //     ".Navbarbg",
+  //     {
+  //       y: -400,
+  //       opacity: 0.8,
+  //     },
+  //     {
+  //       y: 0,
+  //       duration: 1,
+  //       delay: 3,
+  //       opacity: 1,
+  //       // backgroundColor:"black",
+  //       scrollTrigger: {
+  //         trigger: "#disapperaingContainer",
+  //         // start:"80% 50%",
+  //         // end:"bottom -100%",
+  //         // scrub:true,
+  //         // markers:true,
+  //         toggleActions: "restart none none none",
+  //       },
+  //     }
+  //   );
 
-    gsap.fromTo(
-      "#zoom",
-      {
-        opacity: 0.8,
-        scale: 0,
-      },
-      {
-        opacity: 1,
-        scale: 9,
-        // backgroundColor:"black",
-        scrollTrigger: {
-          trigger: "#zoom",
-          start: "80% 50%",
-          end: "bottom -100%",
-          scrub: true,
-          // markers:true,
-          toggleActions: "restart none none none",
-        },
-      }
-    );
+  //   gsap.fromTo(
+  //     "#zoom",
+  //     {
+  //       opacity: 0.8,
+  //       scale: 0,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       scale: 9,
+  //       // backgroundColor:"black",
+  //       scrollTrigger: {
+  //         trigger: "#zoom",
+  //         start: "80% 50%",
+  //         end: "bottom -100%",
+  //         scrub: true,
+  //         // markers:true,
+  //         toggleActions: "restart none none none",
+  //       },
+  //     }
+  //   );
 
-    gsap.to(".bottom-layer", {
-      padding: "15vw 0vw",
-      //  paddingTop:"50vh",
-      marginLeft: "0px",
-      width: "100vw",
-      duration: 0.3,
-      borderTopLeftRadius: 0,
-      borderTopRightRadius: 0,
+  //   gsap.to(".bottom-layer", {
+  //     padding: "15vw 0vw",
+  //     //  paddingTop:"50vh",
+  //     marginLeft: "0px",
+  //     width: "100vw",
+  //     duration: 0.3,
+  //     borderTopLeftRadius: 0,
+  //     borderTopRightRadius: 0,
 
-      scrollTrigger: {
-        trigger: ".bottom-layer",
-        start: "top 60%",
-        end: "top 0%",
-        scrub: 1,
-        // markers: true,
-        toggleActions: "reverse none none reverse",
-      },
-    });
+  //     scrollTrigger: {
+  //       trigger: ".bottom-layer",
+  //       start: "top 60%",
+  //       end: "top 0%",
+  //       scrub: 1,
+  //       // markers: true,
+  //       toggleActions: "reverse none none reverse",
+  //     },
+  //   });
 
-    // const tlLP = gsap.timeline();
+  // const tlLP = gsap.timeline();
 
-    // tlLP.fromTo('.titleContainer3',{
-    //   y:"-200%"
-    // },{
-    //   y:'-300%',
-    //   delay:2.2,
-    //   duration:1
-    // })
+  // tlLP.fromTo('.titleContainer3',{
+  //   y:"-200%"
+  // },{
+  //   y:'-300%',
+  //   delay:2.2,
+  //   duration:1
+  // })
 
-    // tlLP.fromTo('#X',{
-    //   backgroundColor:"red",
-    //   color:"black"
-    // },{
-    //   backgroundColor:"rgba(255, 0, 0,0)",
-    //   color:"red",
-    //   duration:0.2
-    // })
+  // tlLP.fromTo('#X',{
+  //   backgroundColor:"red",
+  //   color:"black"
+  // },{
+  //   backgroundColor:"rgba(255, 0, 0,0)",
+  //   color:"red",
+  //   duration:0.2
+  // })
 
-    // tlLP.fromTo('.titleContainer2',{
-    //   y:"-100%",
-    //   x:'-75%',
-    // },{
-    //   x:0,
-    //   duration:1
-    // })
+  // tlLP.fromTo('.titleContainer2',{
+  //   y:"-100%",
+  //   x:'-75%',
+  // },{
+  //   x:0,
+  //   duration:1
+  // })
 
-    // gsap.fromTo('.TED',{
-    //   opacity:0,
-    //   scale:0
-    // },{
-    //   scale:1,
-    //   delay:3.6,
-    //   duration:0.7,
-    //   opacity:1,
-    //   stagger:{
-    //     amount:0.3,
-    //     from:'end'
-    //   },
-    // })
-  }, []);
+  // gsap.fromTo('.TED',{
+  //   opacity:0,
+  //   scale:0
+  // },{
+  //   scale:1,
+  //   delay:3.6,
+  //   duration:0.7,
+  //   opacity:1,
+  //   stagger:{
+  //     amount:0.3,
+  //     from:'end'
+  //   },
+  // })
+  // }, []);
 
   // useEffect(() => {
   //   if (window.innerHeight < window.innerWidth) {
