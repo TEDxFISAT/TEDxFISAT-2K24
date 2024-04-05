@@ -91,9 +91,13 @@ const Ticket = () => {
     <div
       className="ticket"
       style={
-        window.innerHeight < window.innerWidth
-          ? { width: "100vw", height: "100vh", backgroundColor: "black" }
-          : { height: "170vh", backgroundColor: "black" }
+        {
+          width: "100vw",
+          height: window.innerHeight < window.innerWidth ? "100vh" : "170vh",
+          backgroundColor: "black",
+          borderRadius: "30px",
+        }
+        // { height: "170vh", backgroundColor: "black" }
       }
     >
       <h1

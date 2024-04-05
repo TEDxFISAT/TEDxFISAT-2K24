@@ -11,6 +11,7 @@ import Video from "./video";
 import Speakers from "./SpeakersMain";
 import Ticket from "./Ticket";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -399,9 +400,40 @@ const LandingPg = () => {
             />
           </div>
         </div>
-        {/* <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
-            <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"1%",height:"50%"}}/>
-        </div> */}
+        <div
+          style={
+            window.innerHeight < window.innerWidth
+              ? {
+                  height: "15vh",
+                  width: "45vw",
+                  textAlign: "center",
+                  transform: "translateY(-15vh)",
+                  zIndex: 3,
+                }
+              : {
+                  height: "15vh",
+                  width: "100vw",
+                  textAlign: "center",
+                  zIndex: 3,
+                }
+          }
+        >
+          <Link
+            to="/Register"
+            style={{
+              color: "black",
+              textDecoration: "none",
+              backgroundColor: "red",
+              zIndex: 3,
+              padding: "2%",
+              borderRadius: "5px",
+              fontWeight: "600",
+            }}
+          >
+            REGISTER
+          </Link>
+          {/* <button onClick={() => console.log("clicked")}>B</button> */}
+        </div>
         {/* <div
           id="zoom"
           style={{

@@ -73,13 +73,13 @@ const Navbar = () => {
               <Link to="/Team">Team</Link>
             </li>
           </ul>
-          <Link
+          {/* <Link
             to="/Register"
             class="buttonn"
             onClick={() => handleItemClick("")}
           >
             Register
-          </Link>
+          </Link> */}
         </nav>
       </div>
 
