@@ -129,8 +129,13 @@
   }
   .NavB{
     display: flex;
-    width: 90vw;
+    width: 80vw;
     justify-content: space-between;
+  }
+  .NavB img{
+    height: 50px;
+    width: 130px;
+   
   }
   .NavB h1{
     font-weight: 800;

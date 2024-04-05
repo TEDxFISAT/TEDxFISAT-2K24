@@ -32,16 +32,18 @@ const Navbar = () => {
       <div className={`Navbarbg ${Open ? "no-scroll" : ""}`}>
         <nav className="NavB">
           <ul className="mobMenu">
-            <input
+          <input
               type="checkbox"
               id="checkbox"
               onChange={() => toggleMenu()}
+              checked={Open}
             ></input>
-            <label for="checkbox" class="toggle">
-              <div class="bars" id="bar1"></div>
-              <div class="bars" id="bar2"></div>
-              <div class="bars" id="bar3"></div>
+            <label htmlFor="checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
             </label>
+
 
             <img src={logo} height={50} width={120}></img>
           </ul>
