@@ -6,7 +6,7 @@
   
   @media (max-width: 1440px) {
     .speaker-page {
-      zoom: .8;
+      zoom: .7;
     }
   }
   
@@ -152,3 +152,28 @@
     .swiper-pagination .swiper-pagination-bullet-active {
       background: var(--primary);
     }
+
+
+    .slide-content {
+      position: relative;
+    }
+    
+    .slide-content img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .active-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+    
+    .hidden-text {
+      display: none;
+    }
+    
