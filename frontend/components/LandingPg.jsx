@@ -206,10 +206,10 @@ const LandingPg = () => {
         style={{
           height: "100vh",
           width: "100vw",
-          zIndex: -1,
+          // zIndex: -1,
           overflow: "hidden",
-          position: "sticky",
-          top: 0,
+          // position: "sticky",
+          // top: 0,
         }}
       >
         <div
@@ -380,7 +380,7 @@ const LandingPg = () => {
         {/* <div style={window.innerHeight<window.innerWidth?{height:"15vh",width:"45vw",textAlign:"center",transform:"translateY(-15vh)"}:{height:"15vh",width:"100vw",textAlign:"center"}}>
             <img src={Scroll} style={window.innerHeight<window.innerWidth?{height:"100%"}:{marginTop:"1%",height:"50%"}}/>
         </div> */}
-        <div
+        {/* <div
           id="zoom"
           style={{
             clipPath: "circle(10% at 50% 50%)",
@@ -388,7 +388,7 @@ const LandingPg = () => {
             backdropFilter: "blur(10px)",
             boxShadow: "0 0 20px white",
           }}
-        ></div>
+        ></div> */}
       </div>
       <Video />
       <About />
