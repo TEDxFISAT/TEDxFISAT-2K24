@@ -249,8 +249,10 @@ const LandingPg = () => {
                   }
             }
           >
-            {/* <p style={{fontSize:"6rem",margin:0,padding:0}}><span style={{color:"red",fontWeight:"800"}}><div>T</div><div>E</div>Dx</span>FISAT</p> */}
-            {window.innerHeight < window.innerWidth ? (
+            <p style={{ fontSize: "3.5rem", fontWeight: "800", margin: 0 }}>
+              <span style={{ color: "red" }}>TEDx</span>FISAT
+            </p>
+            {/* {window.innerHeight < window.innerWidth ? (
               <div
                 style={
                   window.innerHeight < window.innerWidth
@@ -311,7 +313,7 @@ const LandingPg = () => {
               <p style={{ fontSize: "3.5rem", fontWeight: "800", margin: 0 }}>
                 <span style={{ color: "red" }}>TEDx</span>FISAT
               </p>
-            )}
+            )} */}
             <p
               style={
                 window.innerHeight < window.innerWidth
