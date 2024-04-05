@@ -113,8 +113,6 @@ const Video = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        position: "sticky",
-        top: "0vh",
         marginTop: "50vh",
       }}
     >
