@@ -15,6 +15,26 @@ import Navbar from "./Navbar";
 gsap.registerPlugin(ScrollTrigger);
 
 const LandingPg = () => {
+  useEffect(() => {
+    gsap.to(".bottom-layer", {
+      padding: "15vw 0vw",
+      //  paddingTop:"50vh",
+      marginLeft: "0px",
+      width: "100vw",
+      duration: 0.3,
+      borderTopLeftRadius: 0,
+      borderTopRightRadius: 0,
+
+      scrollTrigger: {
+        trigger: ".bottom-layer",
+        start: "top 60%",
+        end: "top 0%",
+        scrub: 1,
+        // markers: true,
+        toggleActions: "reverse none none reverse",
+      },
+    });
+  }, []);
   //const cursorblobRef = useRef(null);
 
   // useEffect(() => {
