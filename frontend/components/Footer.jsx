@@ -139,7 +139,13 @@ const Footer = () => {
               : { height: "18%" }
           }
         >
-          <h1 style={{ fontSize: "3rem" }}>
+          <h1
+            style={
+              window.innerHeight < window.innerWidth
+                ? { fontSize: "3rem" }
+                : { fontSize: "2.5rem" }
+            }
+          >
             CONTACT <span style={{ color: "red" }}>US</span>
           </h1>
           <div style={{ display: "flex", justifyContent: "center" }}>

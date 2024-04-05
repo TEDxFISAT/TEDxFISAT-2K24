@@ -71,7 +71,7 @@ function App() {
   return (
     <div
       className="containerr speaker-page"
-      style={{ backgroundColor: "black", borderRadius: "30px", marginTop: 0 }}
+      style={{ borderRadius: "30px", marginTop: 0 }}
     >
       <h1
         className="reveal-headingSpeaker"

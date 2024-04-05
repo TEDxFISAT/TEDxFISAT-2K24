@@ -65,6 +65,7 @@
 
 
 .buttonn {
+  z-index: 10;
   cursor: pointer;
   position: relative;
   padding: 10px 24px;

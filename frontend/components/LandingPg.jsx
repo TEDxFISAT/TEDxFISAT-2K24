@@ -414,8 +414,9 @@ const LandingPg = () => {
       </div>
       <Video />
       <About />
-      <Ticket />
+      <br />
       <Speakers />
+      <Ticket />
       <Footer />
       {/* <div style={{padding:0,margin:0,height:"100vh",color:"black"}}>
         <h1>Page 3</h1>
