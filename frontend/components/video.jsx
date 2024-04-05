@@ -108,22 +108,33 @@ const Video = () => {
     <div
       className="notHero"
       style={{
+        position: "sticky",
+        top: 0,
+        zIndex: -1,
         height: "100vh",
         width: "100vw",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         marginTop: "50vh",
+        backgroundColor: "rgba(255, 255, 255, 0.2)",
+        backdropFilter: "blur(30px)",
       }}
     >
       {/* <div className="hero" style={{position:"relative",height:"10vh", width:"10vh",backgroundColor:"black",transform:"rotate(-10deg)", borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center"}}>
             <FaPlay id="playButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white",zIndex:2,backgroundColor:"black"}}/>
             <FaPause id="pauseButton" style={{position:"absolute",height:"3.5vh", width:"3.5vh",color:"white",zIndex:1}}/>
           </div> */}
-      <video
+      {/* <div
+        style={{
+          height: "100vh",
+          width: "100vw",
+          zIndex: 0,
+          
+        }}
+      ></div> */}
+      {/* <video
         src={vBW}
         type="video/mp4"
         style={{
+          position: "absolute",
           height: "100%",
           width: "100%",
           objectFit: "cover",
@@ -131,7 +142,7 @@ const Video = () => {
         autoPlay
         muted
         loop
-      ></video>
+      ></video> */}
     </div>
   );
 };

@@ -206,10 +206,10 @@ const LandingPg = () => {
         style={{
           height: "100vh",
           width: "100vw",
-          // zIndex: -1,
+          zIndex: -1,
           overflow: "hidden",
-          // position: "sticky",
-          // top: 0,
+          position: "sticky",
+          top: 0,
         }}
       >
         <div
