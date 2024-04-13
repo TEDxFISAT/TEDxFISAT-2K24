@@ -3,9 +3,6 @@ import SponsorData from "../data/data"
 import '../styles/sponsor.css'
 import { GoArrowRight } from "react-icons/go";
 import Footer from "./Footer";
-// import gsap from 'gsap'
-// import { ScrollTrigger } from 'gsap/all'
-// gsap.registerPlugin(ScrollTrigger)
 
 const Sponsors = () => {
     console.log(SponsorData)
