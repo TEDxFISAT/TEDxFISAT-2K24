@@ -52,6 +52,15 @@
       height: 42rem;
       position: relative;
     }
+
+    .swiper-slide h1{
+      position: relative;
+      translate: 25px -675px;
+      font-size: 2rem;
+      color: white; 
+   
+
+    }
     
     @media (max-width: 500px) {
       .swiper_container {
@@ -64,6 +73,12 @@
       .swiper-slide img {
         width: 28rem !important;
         height: 36rem !important;
+      }
+      .swiper-slide h1{
+        position: relative;
+        translate: 25px -590px;
+       
+  
       }
     }
     

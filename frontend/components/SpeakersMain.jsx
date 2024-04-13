@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
+import SpeakerData from "../data/SpeakerData";
 
 function App() {
   //   useEffect(() => {
@@ -106,27 +107,15 @@ function App() {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
+        {SpeakerData.map((speaker,index)=> {return(
+
+
+        <SwiperSlide key={index} className='swiper-slide'>
+          <img src={speaker.img} alt={speaker.name} height={400} width={400} />
+          <h1>{speaker.name}</h1>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img} alt="slide_image" />
-        </SwiperSlide>
+                )})}
+
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
@@ -137,6 +126,7 @@ function App() {
           </div>
           <div className="swiper-pagination"></div>
         </div>
+
       </Swiper>
     </div>
   );
