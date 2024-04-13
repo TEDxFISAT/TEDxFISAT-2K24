@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
-    setOpen(false); 
+    setOpen(false);
   };
 
   const toggleMenu = () => {
@@ -60,7 +60,7 @@ const Navbar = () => {
               className={activeItem === "Sponsors" ? "active" : ""}
               onClick={() => handleItemClick("Sponsors")}
             >
-              <Link to="/#">Sponsors</Link>
+              <Link to="/Sponsors">Sponsors</Link>
             </li>
             <li
               className={activeItem === "Team" ? "active" : ""}

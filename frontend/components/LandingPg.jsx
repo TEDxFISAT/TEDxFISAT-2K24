@@ -421,16 +421,17 @@ const LandingPg = () => {
           <Link
             to="/Register"
             style={{
-              color: "black",
+              color: "white",
               textDecoration: "none",
-              backgroundColor: "red",
+              backgroundColor: "rgb(110, 110, 110)",
               zIndex: 3,
               padding: "2%",
               borderRadius: "5px",
               fontWeight: "600",
+              fontSize: "1rem",
             }}
           >
-            REGISTER
+            REGISTERATIONS CLOSED
           </Link>
           {/* <button onClick={() => console.log("clicked")}>B</button> */}
         </div>

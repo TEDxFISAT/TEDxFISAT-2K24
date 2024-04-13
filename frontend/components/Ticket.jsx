@@ -96,7 +96,7 @@ const Ticket = () => {
           height: "content-fit",
           // height: window.innerHeight < window.innerWidth ? "100vh" : "170vh",
           backgroundColor: "black",
-          borderRadius: "50px",
+          borderRadius: "30px",
         }
         // { height: "170vh", backgroundColor: "black" }
       }
@@ -126,9 +126,23 @@ const Ticket = () => {
           opacity: 0,
         }}
       />
-      {/* <Link to="/Register" class="buttonn" onClick={() => handleItemClick("")}>
-        Register
-      </Link> */}
+      <br />
+      <br />
+      <Link
+        to="/Register"
+        style={{
+          color: "white",
+          textDecoration: "none",
+          backgroundColor: "rgb(110, 110, 110)",
+          zIndex: 3,
+          padding: "1%",
+          borderRadius: "5px",
+          fontWeight: "600",
+          fontSize: "1rem",
+        }}
+      >
+        REGISTERATIONS CLOSED
+      </Link>
     </div>
   );
 };
