@@ -1,6 +1,7 @@
 .cardWrapper{
     width: 100vw;
-    height:60vh;
+    height:fit-content;
+    /* height: 60vh; */
     /* border: 1px solid white; */
     display: flex;
     justify-content: space-around;
@@ -13,7 +14,7 @@
     background-color: #1e1e1e;
     position: relative;
     min-width: 30vw;
-    height:100%;
+    height:60vh;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
@@ -27,7 +28,7 @@
 .glassDiv{
     opacity: 0;
     width: 100%;
-    height:100%;
+    height:60vh;
     z-index: 2;
     position: absolute;
     /* border: 1px solid white; */
@@ -48,7 +49,7 @@
     background-color: rgb(218, 0, 0);
     height: 35%;
     width:40%;
-    border-radius: 50%;
+    border-radius: 100%;
     box-shadow: 0 0 30px black;
     overflow: hidden;
 }
@@ -77,4 +78,8 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     border: 3px solid black;
   }
-  
+
+.imgDiv p{
+    padding: 0;
+    margin:0
+}
