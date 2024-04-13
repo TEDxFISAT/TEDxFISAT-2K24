@@ -125,10 +125,9 @@ const Ticket = () => {
           opacity: 0,
         }}
       />
-      <br />
-      <Link to="/Register" class="buttonn" onClick={() => handleItemClick("")}>
+      {/* <Link to="/Register" class="buttonn" onClick={() => handleItemClick("")}>
         Register
-      </Link>
+      </Link> */}
     </div>
   );
 };

@@ -7,6 +7,26 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Video = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "video",
+      {
+        opacity: 1,
+      },
+      {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".bottom-layer",
+          start: "top 110%",
+          end: "top 80%",
+          scrub: true,
+          markers: true,
+          toggleActions: "reverse none none none",
+        },
+      }
+    );
+  }, []);
+
   // useEffect(() => {
   //     let tlv1 = gsap.timeline()
   //     tlv1.fromTo(
@@ -113,7 +133,6 @@ const Video = () => {
         zIndex: -1,
         height: "100vh",
         width: "100vw",
-        marginTop: "50vh",
         backgroundColor: "rgba(255, 255, 255, 0.2)",
         backdropFilter: "blur(30px)",
       }}
@@ -130,7 +149,7 @@ const Video = () => {
           
         }}
       ></div> */}
-      {/* <video
+      <video
         src={vBW}
         type="video/mp4"
         style={{
@@ -142,7 +161,7 @@ const Video = () => {
         autoPlay
         muted
         loop
-      ></video> */}
+      ></video>
     </div>
   );
 };
