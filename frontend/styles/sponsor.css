@@ -19,6 +19,7 @@
     text-align: center;
     overflow: hidden;
     transition: all 0.3s;
+    margin-bottom: 30px;
 }
 
 .imgDiv{

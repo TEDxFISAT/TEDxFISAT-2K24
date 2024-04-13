@@ -44,7 +44,7 @@ const Sponsors = () => {
               key={id}
               style={
                 window.innerHeight > window.innerWidth
-                  ? { width: "90%", alignSelf: "center", marginBottom: "30px" }
+                  ? { width: "90%", alignSelf: "center" }
                   : null
               }
             >
@@ -61,7 +61,13 @@ const Sponsors = () => {
                 <p>{name}</p>
               </div>
               <div className="glassDiv">
-                <div>
+                <div
+                  style={
+                    window.innerHeight > window.innerWidth
+                      ? { height: "16vh", width: "16vh" }
+                      : null
+                  }
+                >
                   <GoArrowRight
                     id="arrow"
                     style={{
