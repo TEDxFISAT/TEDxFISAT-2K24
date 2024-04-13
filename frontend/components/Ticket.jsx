@@ -93,9 +93,10 @@ const Ticket = () => {
       style={
         {
           width: "100vw",
-          height: window.innerHeight < window.innerWidth ? "100vh" : "170vh",
+          height: "content-fit",
+          // height: window.innerHeight < window.innerWidth ? "100vh" : "170vh",
           backgroundColor: "black",
-          borderRadius: "30px",
+          borderRadius: "50px",
         }
         // { height: "170vh", backgroundColor: "black" }
       }
