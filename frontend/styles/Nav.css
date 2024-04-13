@@ -124,13 +124,17 @@
     justify-content: space-between;
     place-items: center;
   }
+  .mobMenu img{
+    width: 150px;
+  }
 
   .Navbarbg{
     width: 100vw;
   }
   .NavB{
     display: flex;
-    width: 90vw;
+    width: 80vw;
+    border-radius: 35px+padding;
     justify-content: space-between;
   }
   .NavB h1{

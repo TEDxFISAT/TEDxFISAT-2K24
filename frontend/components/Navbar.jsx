@@ -10,16 +10,11 @@ const Navbar = () => {
 
   const handleItemClick = (itemName) => {
     setActiveItem(itemName);
-  };
-
-  const handleClick = (itemName) => {
-    setActiveItem(itemName);
-    setOpen(false);
+    setOpen(false); 
   };
 
   const toggleMenu = () => {
     setOpen(!Open);
-
     if (!Open) {
       document.body.style.overflow = "hidden";
     } else {
@@ -36,18 +31,19 @@ const Navbar = () => {
               type="checkbox"
               id="checkbox"
               onChange={() => toggleMenu()}
+              checked={Open}
             ></input>
-            <label for="checkbox" class="toggle">
-              <div class="bars" id="bar1"></div>
-              <div class="bars" id="bar2"></div>
-              <div class="bars" id="bar3"></div>
+            <label htmlFor="checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
             </label>
 
             <img src={logo} height={50} width={120}></img>
           </ul>
 
           <ul className="Nav">
-            <img src={logo} height={50} width={120}></img>
+            <img src={logo} height={50} width={150}></img>
             <li
               className={activeItem === "Home" ? "active" : ""}
               onClick={() => handleItemClick("Home")}
@@ -75,7 +71,7 @@ const Navbar = () => {
           </ul>
           {/* <Link
             to="/Register"
-            class="buttonn"
+            className="buttonn"
             onClick={() => handleItemClick("")}
           >
             Register
@@ -87,25 +83,25 @@ const Navbar = () => {
         <div className="MobNav">
           <li
             className={activeItem === "Home" ? "active" : ""}
-            onClick={() => handleClick("Home")}
+            onClick={() => handleItemClick("Home")}
           >
             <Link to="/">Home</Link>
           </li>
           <li
             className={activeItem === "Speakers" ? "active" : ""}
-            onClick={() => handleClick("Speakers")}
+            onClick={() => handleItemClick("Speakers")}
           >
             <Link to="/Speakers">Speakers</Link>
           </li>
           <li
             className={activeItem === "Sponsors" ? "active" : ""}
-            onClick={() => handleClick("Sponsors")}
+            onClick={() => handleItemClick("Sponsors")}
           >
             <Link to="/Sponsors">Sponsors</Link>
           </li>
           <li
             className={activeItem === "Team" ? "active" : ""}
-            onClick={() => handleClick("Team")}
+            onClick={() => handleItemClick("Team")}
           >
             <Link to="/Team">Team</Link>
           </li>
