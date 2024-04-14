@@ -35,6 +35,18 @@ const LandingPg = () => {
         toggleActions: "reverse none none reverse",
       },
     });
+
+    gsap.fromTo(
+      ".Navbarbg",
+      {
+        y: -400,
+      },
+      {
+        y: 0,
+        duration: 1,
+        delay: 2,
+      }
+    );
   }, []);
   //const cursorblobRef = useRef(null);
 
