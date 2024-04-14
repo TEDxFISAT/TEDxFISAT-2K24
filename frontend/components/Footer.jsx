@@ -10,42 +10,46 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
-  // useEffect(() => {
-  //   gsap.fromTo('.footer div',{
-  //       opacity:0,
-  //       y:200
-  //     },{
-  //       y:0,
-  //       duration:1.5,
-  //       opacity:1,
-  //       stagger:0.3,
-  //       scrollTrigger: {
-  //           trigger: '.footer',
-  //           // start: 'top 80%',
-  //           // end: 'top 20%',
-  //           // scrub: true,
-  //           // markers: true,
-  //           toggleActions: 'restart none none none',
-  //       },
-  //     })
+  useEffect(() => {
+    gsap.fromTo(
+      ".footer div",
+      {
+        opacity: 0,
+        y: 200,
+      },
+      {
+        y: 0,
+        duration: 1.2,
+        opacity: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".footer",
+          // start: 'top 80%',
+          // end: 'top 20%',
+          // scrub: true,
+          // markers: true,
+          toggleActions: "restart none none none",
+        },
+      }
+    );
 
-  //     gsap.fromTo('.icon',{
-  //       opacity:0,
-  //       scale:0
-  //     },{
-  //       scale:1,
-  //       opacity:1,
-  //       duration:2,
-  //       scrollTrigger: {
-  //           trigger: '.footer',
-  //           // start: 'top 80%',
-  //           // end: 'top 20%',
-  //           // scrub: true,
-  //           // markers: true,
-  //           toggleActions: 'restart none none none',
-  //       },
-  //     })
-  //   },[])
+    //     gsap.fromTo('.icon',{
+    //       opacity:0,
+    //       scale:0
+    //     },{
+    //       scale:1,
+    //       opacity:1,
+    //       duration:2,
+    //       scrollTrigger: {
+    //           trigger: '.footer',
+    //           // start: 'top 80%',
+    //           // end: 'top 20%',
+    //           // scrub: true,
+    //           // markers: true,
+    //           toggleActions: 'restart none none none',
+    //       },
+    //     })
+  }, []);
 
   return (
     <div
