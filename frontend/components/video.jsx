@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
-import vBW from "../data/assets/vBW.mp4";
+import vBW from "../data/assets/vBW.gif";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
@@ -149,9 +149,9 @@ const Video = () => {
           
         }}
       ></div> */}
-      <video
+      <img
         src={vBW}
-        type="video/mp4"
+        type="video"
         style={{
           position: "absolute",
           height: "100%",
@@ -161,7 +161,7 @@ const Video = () => {
         autoPlay
         muted
         loop
-      ></video>
+      ></img>
     </div>
   );
 };

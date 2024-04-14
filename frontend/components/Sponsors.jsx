@@ -37,11 +37,11 @@ const Sponsors = () => {
             : null
         }
       >
-        {SponsorData.map(({ id, name, img }) => {
+        {SponsorData.map(( Sponsor ) => {
           return (
             <div
               className="card"
-              key={id}
+              key={Sponsor.id}
               style={
                 window.innerHeight > window.innerWidth
                   ? { width: "90%", alignSelf: "center" }
@@ -50,7 +50,7 @@ const Sponsors = () => {
             >
               <div className="imgDiv">
                 <img
-                  src={img}
+                  src={Sponsor.img}
                   style={{
                     height: "53vh",
                     width: "100%",
@@ -58,7 +58,7 @@ const Sponsors = () => {
                     borderTopRightRadius: "10px",
                   }}
                 ></img>
-                <p>{name}</p>
+                <p>{Sponsor.name}</p>
               </div>
               <div className="glassDiv">
                 <div
