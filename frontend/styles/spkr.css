@@ -33,7 +33,8 @@
       max-width: 124rem;
       padding: 4rem 1rem;
       margin: 0 auto;
-      overflow-y: auto;
+      overflow-y: scroll;
+
     }
     
     .heading {
@@ -46,12 +47,16 @@
       height: 52rem;
       padding: 2rem 0;
       position: relative;
+      overflow-y: scroll;
+
+
     }
     
     .swiper-slide {
       width: 37rem;
       height: 42rem;
       position: relative;
+      padding-bottom: 0;
     }
 
     .swiper-slide h1{
@@ -62,11 +67,25 @@
    
 
     }
-    .swiper-slide p{
-      width: 100vw;
-      translate: -400px;
+    /* .swiper-slide p{ */
+      /* width: 100vw; */
+      /* translate: -400px; */
    
    
+
+    /* } */
+    .descc{
+      height: auto;
+      display: flex;
+      font-size: x-large;
+      place-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+    }
+    .descc p{
+      margin: 50px 90px;
 
     }
 
@@ -86,6 +105,12 @@
         position: relative;
         translate: 25px -590px;
        
+  
+      }
+      .swiper-slide p{
+        translate: 8px;
+     
+     
   
       }
     }

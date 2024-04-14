@@ -7,9 +7,18 @@ import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import "../styles/spkr.css";
 import SpeakerData from "../data/SpeakerData";
+import { useEffect } from "react";
+
 
 function App() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [activeDescription, setActiveDescription] = useState("");
+
+
+  useEffect(() => {
+    setActiveDescription(SpeakerData[activeIndex].desc);
+   
+  }, [activeIndex]); 
 
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.realIndex);
@@ -49,15 +58,24 @@ function App() {
             {activeIndex === index && (
               <>
             <h1>{speaker.name}</h1>
-            {location.pathname != '/' && 
-            <p>{speaker.desc}</p>
-            }
+        
             </>
             )}
           </SwiperSlide>
+
+
+      
      
           </>
         ))}
+        {location.pathname !='/' && 
+          <div className="descc">
+            <h1>About the speaker</h1>
+          <p>
+            {activeDescription}
+            </p>
+        </div>
+            }
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>

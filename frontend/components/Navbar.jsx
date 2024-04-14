@@ -62,12 +62,12 @@ const Navbar = () => {
             >
               <Link to="/Sponsors">Sponsors</Link>
             </li>
-            <li
+            {/* <li
               className={activeItem === "Team" ? "active" : ""}
               onClick={() => handleItemClick("Team")}
             >
               <Link to="/Team">Team</Link>
-            </li>
+            </li> */}
           </ul>
           {/* <Link
             to="/Register"
@@ -99,12 +99,12 @@ const Navbar = () => {
           >
             <Link to="/Sponsors">Sponsors</Link>
           </li>
-          <li
+          {/* <li
             className={activeItem === "Team" ? "active" : ""}
             onClick={() => handleItemClick("Team")}
           >
             <Link to="/Team">Team</Link>
-          </li>
+          </li> */}
         </div>
       )}
     </>
