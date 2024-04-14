@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import Scroll from "../data/assets/ScrollDown2.gif";
-import LogoVideo from "../data/assets/LogoVideo.gif";
+import LogoVideo from "../data/assets/LogoVideo.mp4";
 import MapGif from "../data/assets/Location1.gif";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -391,7 +391,7 @@ const LandingPg = () => {
                 : { height: "60vh", width: "100%", overflow: "hidden" }
             }
           >
-         <img src={LogoVideo} alt="Logo" style={{ width: "100%", height: "100%",transform: "scale(1.1)" }} />
+         <video src={LogoVideo} alt="Logo" style={{ width: "100%", height: "100%",transform: "scale(1.8)" }} />
 
           </div>
         </div>

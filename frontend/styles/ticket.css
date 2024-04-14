@@ -64,3 +64,15 @@
   .buttonn:active {
     scale: 1;
   }
+
+  .bt{
+    display: flex;
+    width: 100%;
+    place-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .bt .l:hover{
+    cursor: not-allowed;
+
+  }

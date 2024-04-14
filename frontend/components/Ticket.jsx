@@ -128,8 +128,11 @@ const Ticket = () => {
       />
       <br />
       <br />
+      <div className="bt">
+
       <Link
         to="/Register"
+        className="l"
         style={{
           color: "white",
           textDecoration: "none",
@@ -140,9 +143,10 @@ const Ticket = () => {
           fontWeight: "600",
           fontSize: "1rem",
         }}
-      >
+        >
         REGISTERATIONS CLOSED
       </Link>
+        </div>
     </div>
   );
 };
