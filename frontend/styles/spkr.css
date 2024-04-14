@@ -33,6 +33,7 @@
       max-width: 124rem;
       padding: 4rem 1rem;
       margin: 0 auto;
+      overflow-y: auto;
     }
     
     .heading {
@@ -61,7 +62,14 @@
    
 
     }
-    
+    .swiper-slide p{
+      width: 100vw;
+      translate: -400px;
+   
+   
+
+    }
+
     @media (max-width: 500px) {
       .swiper_container {
         height: 47rem;

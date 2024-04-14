@@ -43,10 +43,20 @@ function App() {
         onSlideChange={handleSlideChange}
       >
         {SpeakerData.map((speaker, index) => (
+          <>
           <SwiperSlide key={index} className="swiper-slide">
             <img src={speaker.img} alt={speaker.name} height={400} width={400} />
-            {activeIndex === index && <h1>{speaker.name}</h1>}
+            {activeIndex === index && (
+              <>
+            <h1>{speaker.name}</h1>
+            {location.pathname != '/' && 
+            <p>{speaker.desc}</p>
+            }
+            </>
+            )}
           </SwiperSlide>
+     
+          </>
         ))}
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
