@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
-import vBW from "../data/assets/vBW.mp4";
+import vBW from "../data/assets/vBW1.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);

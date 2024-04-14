@@ -1,36 +1,42 @@
+import SI1 from "../data/assets/Nirmal.jpg";
+import ST2 from "../data/assets/Al-Muqtadir.jpg";
+import ST3 from "../data/assets/Classic.png";
+import ST4 from "../data/assets/Zatoon.jpg";
+import ST5 from "../data/assets/Mallu.jpg";
+
 const SponsorData = [
   {
     id: 1,
     name: "Keerthi Nirmal",
-    img: "../data/assets/Nirmal.jpg",
+    img: SI1,
     website: "",
     desc: "Title-Sponsor",
   },
   {
     id: 2,
     name: "Al Muqtadir",
-    img: "../data/assets/Al-Muqtadir.jpg",
+    img: ST2,
     website: "",
     desc: "Co-Sponsor",
   },
   {
     id: 3,
     name: "Classic Menswear",
-    img: "../data/assets/Classic.png",
+    img: ST3,
     website: "",
     desc: "Co-Sponsor",
   },
   {
     id: 4,
     name: "Zatoon",
-    img: "../data/assets/Zatoon.jpg",
+    img: ST4,
     website: "",
     desc: "Food-Partner",
   },
   {
     id: 5,
     name: "Mallus Kitchen",
-    img: "../data/assets/Mallu.jpg",
+    img: ST5,
     website: "",
     desc: "Food-Partner",
   },
