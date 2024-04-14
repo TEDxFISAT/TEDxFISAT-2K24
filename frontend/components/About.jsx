@@ -190,7 +190,7 @@ const About = () => {
           className="About-img-wrapper"
           style={
             window.innerHeight > window.innerWidth
-              ? { height: "45vh", width: "70vw" }
+              ? { height: "50vh", width: "70vw" }
               : null
           }
         >
