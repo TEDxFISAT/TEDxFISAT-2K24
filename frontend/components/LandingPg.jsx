@@ -391,8 +391,14 @@ const LandingPg = () => {
                 : { height: "60vh", width: "100%", overflow: "hidden" }
             }
           >
-         <video src={LogoVideo} alt="Logo" style={{ width: "100%", height: "100%",transform: "scale(1.8)" }} />
-
+            <video
+              src={LogoVideo}
+              alt="Logo"
+              style={{ width: "100%", height: "100%", transform: "scale(1.8)" }}
+              autoPlay
+              muted
+              loop
+            />
           </div>
         </div>
         <div
