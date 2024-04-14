@@ -1,6 +1,6 @@
 import SP1 from "../data/assets/ahmed.jpg";
 import SP2 from "../data/assets/AnjuJoseph.jpg";
-import SP3 from "../data/assets/AnaghaMaria.JPG";
+import SP3 from "../data/assets/AnaghaMaria.jpg";
 import SP4 from "../data/assets/SachinSamson.jpg";
 import SP5 from "../data/assets/HarithNoah.jpg";
 import SP6 from "../data/assets/RjMike.jpg";
