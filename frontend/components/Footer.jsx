@@ -68,7 +68,8 @@ const Footer = () => {
         style={
           window.innerHeight < window.innerWidth
             ? {
-                height: "54vh",
+                minHeight: "54vh",
+                maxHeight: "fitContent",
                 marginLeft: "1%",
                 marginTop: "8vh",
                 width: "98%",
@@ -80,7 +81,8 @@ const Footer = () => {
                 overflow: "hidden",
               }
             : {
-                height: "90vh",
+                minHeight: "90vh",
+                maxHeight: "fitContent",
                 marginLeft: "1%",
                 marginTop: "5vh",
                 width: "98%",
@@ -115,15 +117,24 @@ const Footer = () => {
           </p>
 
           <div className="social-icons">
-            <a href="https://www.instagram.com/tedxfisat24?igsh=MW5pcGdqYmwydjl2bQ==" target='_blank'>
+            <a
+              href="https://www.instagram.com/tedxfisat24?igsh=MW5pcGdqYmwydjl2bQ=="
+              target="_blank"
+            >
               {" "}
-              <FaInstagram className="icon" href="https://www.instagram.com/tedxfisat24?igsh=MW5pcGdqYmwydjl2bQ==" />
+              <FaInstagram
+                className="icon"
+                href="https://www.instagram.com/tedxfisat24?igsh=MW5pcGdqYmwydjl2bQ=="
+              />
             </a>
-            <a href="https://www.linkedin.com/company/tedxfisat/mycompany/" target='_blank'>
+            <a
+              href="https://www.linkedin.com/company/tedxfisat/mycompany/"
+              target="_blank"
+            >
               {" "}
               <FaLinkedin className="icon" />
             </a>
-            <a href="/" target='_blank'>
+            <a href="/" target="_blank">
               {" "}
               <FaYoutube className="icon" />
             </a>
@@ -155,10 +166,10 @@ const Footer = () => {
           <div style={{ display: "flex", justifyContent: "center" }}>
             <a href="tel:+919526685266">
               <CiPhone className="icon" />
-              </a>
-            <a href='mailTo:tedx.fisat24@gmail.com'>
-              <MdOutlineEmail className="icon"  />
-              </a>
+            </a>
+            <a href="mailTo:tedx.fisat24@gmail.com">
+              <MdOutlineEmail className="icon" />
+            </a>
             {/* <FaInstagram className="icon" /> */}
           </div>
         </div>
